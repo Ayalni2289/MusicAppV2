@@ -9,28 +9,28 @@ namespace MusicApp.Chat.Net.IO
 {
     class PacketBuilder
     {
-        MemoryStream _ms;
+        MemoryStream _memoryStream;
 
         public PacketBuilder()
         {
-            _ms = new MemoryStream();
+            _memoryStream = new MemoryStream();
         }
 
         public void WriteOpCode(byte opcode)
         {
-            _ms.WriteByte(opcode);
+            _memoryStream.WriteByte(opcode);
         }
 
-        public void WriteString(string msg) 
+        public void WriteString(string message) 
         {
-            var msgLength = msg.Length;
-            _ms.Write(BitConverter.GetBytes(msgLength));
-            _ms.Write(Encoding.ASCII.GetBytes(msg));
+            var msgLength = message.Length;
+            _memoryStream.Write(BitConverter.GetBytes(msgLength));
+            _memoryStream.Write(Encoding.ASCII.GetBytes(message));
         }
 
         public byte[] GetPacketBytes()
         {
-            return _ms.ToArray();
+            return _memoryStream.ToArray();
         }
     }
 }

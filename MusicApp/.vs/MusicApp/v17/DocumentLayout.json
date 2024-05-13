@@ -3,26 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Yusuf\\Desktop\\Last\\MusicAppV2\\MusicApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{111F793F-20D0-424E-8A0C-F460209374E2}|..\\ChatServer\\ChatServer.csproj|c:\\users\\yusuf\\desktop\\last\\musicappv2\\chatserver\\net\\io\\packetreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{111F793F-20D0-424E-8A0C-F460209374E2}|..\\ChatServer\\ChatServer.csproj|c:\\users\\yusuf\\desktop\\last\\musicappv2\\chatserver\\net\\io\\packetbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46D610E0-6594-482E-B894-64E5C3794DBA}|MusicApp.csproj|c:\\users\\yusuf\\desktop\\last\\musicappv2\\musicapp\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46D610E0-6594-482E-B894-64E5C3794DBA}|MusicApp.csproj|solutionrelative:properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46D610E0-6594-482E-B894-64E5C3794DBA}|MusicApp.csproj|c:\\users\\yusuf\\desktop\\last\\musicappv2\\musicapp\\authentication\\authenticationmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46D610E0-6594-482E-B894-64E5C3794DBA}|MusicApp.csproj|solutionrelative:authentication\\authenticationmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{46D610E0-6594-482E-B894-64E5C3794DBA}|MusicApp.csproj|c:\\users\\yusuf\\desktop\\last\\musicappv2\\musicapp\\chat\\net\\io\\packetbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46D610E0-6594-482E-B894-64E5C3794DBA}|MusicApp.csproj|solutionrelative:chat\\net\\io\\packetbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{46D610E0-6594-482E-B894-64E5C3794DBA}|MusicApp.csproj|c:\\users\\yusuf\\desktop\\last\\musicappv2\\musicapp\\chat\\mvvm\\viewmodel\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{46D610E0-6594-482E-B894-64E5C3794DBA}|MusicApp.csproj|solutionrelative:chat\\mvvm\\viewmodel\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46D610E0-6594-482E-B894-64E5C3794DBA}|MusicApp.csproj|c:\\users\\yusuf\\desktop\\last\\musicappv2\\musicapp\\chat\\mvvm\\view\\chatwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{46D610E0-6594-482E-B894-64E5C3794DBA}|MusicApp.csproj|solutionrelative:chat\\mvvm\\view\\chatwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{46D610E0-6594-482E-B894-64E5C3794DBA}|MusicApp.csproj|c:\\users\\yusuf\\desktop\\last\\musicappv2\\musicapp\\chat\\mvvm\\model\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,6 +17,33 @@
     {
       "AbsoluteMoniker": "D:0:0:{46D610E0-6594-482E-B894-64E5C3794DBA}|MusicApp.csproj|c:\\users\\yusuf\\desktop\\last\\musicappv2\\musicapp\\chat\\mvvm\\core\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{46D610E0-6594-482E-B894-64E5C3794DBA}|MusicApp.csproj|solutionrelative:chat\\mvvm\\core\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46D610E0-6594-482E-B894-64E5C3794DBA}|MusicApp.csproj|c:\\users\\yusuf\\desktop\\last\\musicappv2\\musicapp\\authentication\\authenticationmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46D610E0-6594-482E-B894-64E5C3794DBA}|MusicApp.csproj|solutionrelative:authentication\\authenticationmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{111F793F-20D0-424E-8A0C-F460209374E2}|..\\ChatServer\\ChatServer.csproj|c:\\users\\yusuf\\desktop\\last\\musicappv2\\chatserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{111F793F-20D0-424E-8A0C-F460209374E2}|..\\ChatServer\\ChatServer.csproj|c:\\users\\yusuf\\desktop\\last\\musicappv2\\chatserver\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{111F793F-20D0-424E-8A0C-F460209374E2}|..\\ChatServer\\ChatServer.csproj|c:\\users\\yusuf\\desktop\\last\\musicappv2\\chatserver\\net\\io\\packetreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{111F793F-20D0-424E-8A0C-F460209374E2}|..\\ChatServer\\ChatServer.csproj|c:\\users\\yusuf\\desktop\\last\\musicappv2\\chatserver\\net\\io\\packetbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{111F793F-20D0-424E-8A0C-F460209374E2}|..\\ChatServer\\ChatServer.csproj|c:\\users\\yusuf\\desktop\\last\\musicappv2\\chatserver\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46D610E0-6594-482E-B894-64E5C3794DBA}|MusicApp.csproj|c:\\users\\yusuf\\desktop\\last\\musicappv2\\musicapp\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46D610E0-6594-482E-B894-64E5C3794DBA}|MusicApp.csproj|solutionrelative:properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46D610E0-6594-482E-B894-64E5C3794DBA}|MusicApp.csproj|c:\\users\\yusuf\\desktop\\last\\musicappv2\\musicapp\\chat\\mvvm\\view\\chatwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{46D610E0-6594-482E-B894-64E5C3794DBA}|MusicApp.csproj|solutionrelative:chat\\mvvm\\view\\chatwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{46D610E0-6594-482E-B894-64E5C3794DBA}|MusicApp.csproj|c:\\users\\yusuf\\desktop\\last\\musicappv2\\musicapp\\database\\databasemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -43,9 +56,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{46D610E0-6594-482E-B894-64E5C3794DBA}|MusicApp.csproj|c:\\users\\yusuf\\desktop\\last\\musicappv2\\musicapp\\security\\security.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{46D610E0-6594-482E-B894-64E5C3794DBA}|MusicApp.csproj|solutionrelative:security\\security.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{111F793F-20D0-424E-8A0C-F460209374E2}|..\\ChatServer\\ChatServer.csproj|c:\\users\\yusuf\\desktop\\last\\musicappv2\\chatserver\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{46D610E0-6594-482E-B894-64E5C3794DBA}|MusicApp.csproj|c:\\users\\yusuf\\desktop\\last\\musicappv2\\musicapp\\chat\\net\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -180,46 +190,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 4,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AuthenticationModule.cs",
-              "DocumentMoniker": "C:\\Users\\Yusuf\\Desktop\\Last\\MusicAppV2\\MusicApp\\Authentication\\AuthenticationModule.cs",
-              "RelativeDocumentMoniker": "Authentication\\AuthenticationModule.cs",
-              "ToolTip": "C:\\Users\\Yusuf\\Desktop\\Last\\MusicAppV2\\MusicApp\\Authentication\\AuthenticationModule.cs",
-              "RelativeToolTip": "Authentication\\AuthenticationModule.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T15:03:39.515Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ChatWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\Yusuf\\Desktop\\Last\\MusicAppV2\\MusicApp\\Chat\\MVVM\\View\\ChatWindow.xaml",
-              "RelativeDocumentMoniker": "Chat\\MVVM\\View\\ChatWindow.xaml",
-              "ToolTip": "C:\\Users\\Yusuf\\Desktop\\Last\\MusicAppV2\\MusicApp\\Chat\\MVVM\\View\\ChatWindow.xaml",
-              "RelativeToolTip": "Chat\\MVVM\\View\\ChatWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-13T15:03:27.758Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UserModel.cs",
-              "DocumentMoniker": "C:\\Users\\Yusuf\\Desktop\\Last\\MusicAppV2\\MusicApp\\Chat\\MVVM\\Model\\UserModel.cs",
-              "RelativeDocumentMoniker": "Chat\\MVVM\\Model\\UserModel.cs",
-              "ToolTip": "C:\\Users\\Yusuf\\Desktop\\Last\\MusicAppV2\\MusicApp\\Chat\\MVVM\\Model\\UserModel.cs",
-              "RelativeToolTip": "Chat\\MVVM\\Model\\UserModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T15:03:25.135Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{873151d0-cf2e-48cc-b4bf-ad0394f6a3c3}"
@@ -238,20 +210,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "DatabaseManager.cs",
-              "DocumentMoniker": "C:\\Users\\Yusuf\\Desktop\\Last\\MusicAppV2\\MusicApp\\Database\\DatabaseManager.cs",
-              "RelativeDocumentMoniker": "Database\\DatabaseManager.cs",
-              "ToolTip": "C:\\Users\\Yusuf\\Desktop\\Last\\MusicAppV2\\MusicApp\\Database\\DatabaseManager.cs",
-              "RelativeToolTip": "Database\\DatabaseManager.cs",
-              "ViewState": "AQIAAAoBAAAAAAAAAAAswAAAAAAAAAAA",
+              "DocumentIndex": 0,
+              "Title": "PacketBuilder.cs",
+              "DocumentMoniker": "C:\\Users\\Yusuf\\Desktop\\Last\\MusicAppV2\\MusicApp\\Chat\\Net\\IO\\PacketBuilder.cs",
+              "RelativeDocumentMoniker": "Chat\\Net\\IO\\PacketBuilder.cs",
+              "ToolTip": "C:\\Users\\Yusuf\\Desktop\\Last\\MusicAppV2\\MusicApp\\Chat\\Net\\IO\\PacketBuilder.cs",
+              "RelativeToolTip": "Chat\\Net\\IO\\PacketBuilder.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABkAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T15:03:00.623Z",
+              "WhenOpened": "2024-05-13T15:12:11.379Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Yusuf\\Desktop\\Last\\MusicAppV2\\ChatServer\\Program.cs",
+              "RelativeDocumentMoniker": "..\\ChatServer\\Program.cs",
+              "ToolTip": "C:\\Users\\Yusuf\\Desktop\\Last\\MusicAppV2\\ChatServer\\Program.cs",
+              "RelativeToolTip": "..\\ChatServer\\Program.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T15:11:42.158Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "RelayCommand.cs",
               "DocumentMoniker": "C:\\Users\\Yusuf\\Desktop\\Last\\MusicAppV2\\MusicApp\\Chat\\MVVM\\Core\\RelayCommand.cs",
               "RelativeDocumentMoniker": "Chat\\MVVM\\Core\\RelayCommand.cs",
@@ -264,7 +249,98 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PacketBuilder.cs",
+              "DocumentMoniker": "C:\\Users\\Yusuf\\Desktop\\Last\\MusicAppV2\\ChatServer\\Net\\IO\\PacketBuilder.cs",
+              "RelativeDocumentMoniker": "..\\ChatServer\\Net\\IO\\PacketBuilder.cs",
+              "ToolTip": "C:\\Users\\Yusuf\\Desktop\\Last\\MusicAppV2\\ChatServer\\Net\\IO\\PacketBuilder.cs",
+              "RelativeToolTip": "..\\ChatServer\\Net\\IO\\PacketBuilder.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T14:39:24.645Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PacketReader.cs",
+              "DocumentMoniker": "C:\\Users\\Yusuf\\Desktop\\Last\\MusicAppV2\\ChatServer\\Net\\IO\\PacketReader.cs",
+              "RelativeDocumentMoniker": "..\\ChatServer\\Net\\IO\\PacketReader.cs",
+              "ToolTip": "C:\\Users\\Yusuf\\Desktop\\Last\\MusicAppV2\\ChatServer\\Net\\IO\\PacketReader.cs",
+              "RelativeToolTip": "..\\ChatServer\\Net\\IO\\PacketReader.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T14:45:35.479Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Client.cs",
+              "DocumentMoniker": "C:\\Users\\Yusuf\\Desktop\\Last\\MusicAppV2\\ChatServer\\Client.cs",
+              "RelativeDocumentMoniker": "..\\ChatServer\\Client.cs",
+              "ToolTip": "C:\\Users\\Yusuf\\Desktop\\Last\\MusicAppV2\\ChatServer\\Client.cs",
+              "RelativeToolTip": "..\\ChatServer\\Client.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAgwA4AAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T14:50:12.96Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AuthenticationModule.cs",
+              "DocumentMoniker": "C:\\Users\\Yusuf\\Desktop\\Last\\MusicAppV2\\MusicApp\\Authentication\\AuthenticationModule.cs",
+              "RelativeDocumentMoniker": "Authentication\\AuthenticationModule.cs",
+              "ToolTip": "C:\\Users\\Yusuf\\Desktop\\Last\\MusicAppV2\\MusicApp\\Authentication\\AuthenticationModule.cs",
+              "RelativeToolTip": "Authentication\\AuthenticationModule.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAYwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T15:03:39.515Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "UserModel.cs",
+              "DocumentMoniker": "C:\\Users\\Yusuf\\Desktop\\Last\\MusicAppV2\\MusicApp\\Chat\\MVVM\\Model\\UserModel.cs",
+              "RelativeDocumentMoniker": "Chat\\MVVM\\Model\\UserModel.cs",
+              "ToolTip": "C:\\Users\\Yusuf\\Desktop\\Last\\MusicAppV2\\MusicApp\\Chat\\MVVM\\Model\\UserModel.cs",
+              "RelativeToolTip": "Chat\\MVVM\\Model\\UserModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T15:03:25.135Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Yusuf\\Desktop\\Last\\MusicAppV2\\MusicApp\\Chat\\MVVM\\ViewModel\\MainViewModel.cs",
+              "RelativeDocumentMoniker": "Chat\\MVVM\\ViewModel\\MainViewModel.cs",
+              "ToolTip": "C:\\Users\\Yusuf\\Desktop\\Last\\MusicAppV2\\MusicApp\\Chat\\MVVM\\ViewModel\\MainViewModel.cs",
+              "RelativeToolTip": "Chat\\MVVM\\ViewModel\\MainViewModel.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAAwwEQAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T06:06:44.37Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\Yusuf\\Desktop\\Last\\MusicAppV2\\ChatServer\\.gitignore",
+              "RelativeDocumentMoniker": "..\\ChatServer\\.gitignore",
+              "ToolTip": "C:\\Users\\Yusuf\\Desktop\\Last\\MusicAppV2\\ChatServer\\.gitignore",
+              "RelativeToolTip": "..\\ChatServer\\.gitignore",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAADUAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-05-13T15:09:24.96Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "AssemblyInfo.cs",
               "DocumentMoniker": "C:\\Users\\Yusuf\\Desktop\\Last\\MusicAppV2\\MusicApp\\Properties\\AssemblyInfo.cs",
               "RelativeDocumentMoniker": "Properties\\AssemblyInfo.cs",
@@ -277,33 +353,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PacketBuilder.cs",
-              "DocumentMoniker": "C:\\Users\\Yusuf\\Desktop\\Last\\MusicAppV2\\ChatServer\\Net\\IO\\PacketBuilder.cs",
-              "RelativeDocumentMoniker": "..\\ChatServer\\Net\\IO\\PacketBuilder.cs",
-              "ToolTip": "C:\\Users\\Yusuf\\Desktop\\Last\\MusicAppV2\\ChatServer\\Net\\IO\\PacketBuilder.cs",
-              "RelativeToolTip": "..\\ChatServer\\Net\\IO\\PacketBuilder.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAQwBsAAAAAAAAA",
+              "DocumentIndex": 12,
+              "Title": "DatabaseManager.cs",
+              "DocumentMoniker": "C:\\Users\\Yusuf\\Desktop\\Last\\MusicAppV2\\MusicApp\\Database\\DatabaseManager.cs",
+              "RelativeDocumentMoniker": "Database\\DatabaseManager.cs",
+              "ToolTip": "C:\\Users\\Yusuf\\Desktop\\Last\\MusicAppV2\\MusicApp\\Database\\DatabaseManager.cs",
+              "RelativeToolTip": "Database\\DatabaseManager.cs",
+              "ViewState": "AQIAAAoBAAAAAAAAAAAswAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T14:39:24.645Z",
+              "WhenOpened": "2024-05-13T15:03:00.623Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PacketReader.cs",
-              "DocumentMoniker": "C:\\Users\\Yusuf\\Desktop\\Last\\MusicAppV2\\ChatServer\\Net\\IO\\PacketReader.cs",
-              "RelativeDocumentMoniker": "..\\ChatServer\\Net\\IO\\PacketReader.cs",
-              "ToolTip": "C:\\Users\\Yusuf\\Desktop\\Last\\MusicAppV2\\ChatServer\\Net\\IO\\PacketReader.cs",
-              "RelativeToolTip": "..\\ChatServer\\Net\\IO\\PacketReader.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA4AAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T14:45:35.479Z",
+              "DocumentIndex": 11,
+              "Title": "ChatWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Yusuf\\Desktop\\Last\\MusicAppV2\\MusicApp\\Chat\\MVVM\\View\\ChatWindow.xaml",
+              "RelativeDocumentMoniker": "Chat\\MVVM\\View\\ChatWindow.xaml",
+              "ToolTip": "C:\\Users\\Yusuf\\Desktop\\Last\\MusicAppV2\\MusicApp\\Chat\\MVVM\\View\\ChatWindow.xaml",
+              "RelativeToolTip": "Chat\\MVVM\\View\\ChatWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-13T15:03:27.758Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "Profile.cs",
               "DocumentMoniker": "C:\\Users\\Yusuf\\Desktop\\Last\\MusicAppV2\\MusicApp\\Profile\\Profile.cs",
               "RelativeDocumentMoniker": "Profile\\Profile.cs",
@@ -316,7 +391,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "Security.cs",
               "DocumentMoniker": "C:\\Users\\Yusuf\\Desktop\\Last\\MusicAppV2\\MusicApp\\Security\\Security.cs",
               "RelativeDocumentMoniker": "Security\\Security.cs",
@@ -329,33 +404,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Client.cs",
-              "DocumentMoniker": "C:\\Users\\Yusuf\\Desktop\\Last\\MusicAppV2\\ChatServer\\Client.cs",
-              "RelativeDocumentMoniker": "..\\ChatServer\\Client.cs",
-              "ToolTip": "C:\\Users\\Yusuf\\Desktop\\Last\\MusicAppV2\\ChatServer\\Client.cs",
-              "RelativeToolTip": "..\\ChatServer\\Client.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAzwA4AAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T14:50:12.96Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MainViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Yusuf\\Desktop\\Last\\MusicAppV2\\MusicApp\\Chat\\MVVM\\ViewModel\\MainViewModel.cs",
-              "RelativeDocumentMoniker": "Chat\\MVVM\\ViewModel\\MainViewModel.cs",
-              "ToolTip": "C:\\Users\\Yusuf\\Desktop\\Last\\MusicAppV2\\MusicApp\\Chat\\MVVM\\ViewModel\\MainViewModel.cs",
-              "RelativeToolTip": "Chat\\MVVM\\ViewModel\\MainViewModel.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAYwEQAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T06:06:44.37Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "ChatServerLogicHelpers.cs",
               "DocumentMoniker": "C:\\Users\\Yusuf\\Desktop\\Last\\MusicAppV2\\ChatServer\\ChatServerLogicHelpers.cs",
               "RelativeDocumentMoniker": "..\\ChatServer\\ChatServerLogicHelpers.cs",
@@ -367,7 +416,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "Server.cs",
               "DocumentMoniker": "C:\\Users\\Yusuf\\Desktop\\Last\\MusicAppV2\\MusicApp\\Chat\\Net\\Server.cs",
               "RelativeDocumentMoniker": "Chat\\Net\\Server.cs",
@@ -379,7 +428,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "ChatServer.csproj",
               "DocumentMoniker": "C:\\Users\\Yusuf\\Desktop\\Last\\MusicAppV2\\ChatServer\\ChatServer.csproj",
               "RelativeDocumentMoniker": "..\\ChatServer\\ChatServer.csproj",
@@ -391,7 +440,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "ChatServerLogicHelpers.cs",
               "DocumentMoniker": "C:\\Users\\Yusuf\\Desktop\\MusicApp-main\\MusicApp-main\\ChatServer\\ChatServerLogicHelpers.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\MusicApp-main\\MusicApp-main\\ChatServer\\ChatServerLogicHelpers.cs",
@@ -403,7 +452,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 44,
               "Title": "LoginWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Yusuf\\Desktop\\Last\\MusicAppV2\\MusicApp\\LoginWindow.xaml.cs",
               "RelativeDocumentMoniker": "LoginWindow.xaml.cs",
@@ -415,7 +464,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 43,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Yusuf\\Desktop\\Last\\MusicAppV2\\MusicApp\\App.xaml.cs",
               "RelativeDocumentMoniker": "App.xaml.cs",
@@ -427,7 +476,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 51,
               "Title": "Client.cs",
               "DocumentMoniker": "C:\\Users\\Yusuf\\Desktop\\MusicApp-main\\MusicApp-main\\ChatServer\\Client.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\MusicApp-main\\MusicApp-main\\ChatServer\\Client.cs",
@@ -439,7 +488,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 41,
               "Title": "SearchResultItemControl.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Yusuf\\Desktop\\Last\\MusicAppV2\\MusicApp\\Search\\SearchResultItemControl.xaml.cs",
               "RelativeDocumentMoniker": "Search\\SearchResultItemControl.xaml.cs",
@@ -451,7 +500,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 42,
               "Title": "SearchWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Yusuf\\Desktop\\Last\\MusicAppV2\\MusicApp\\Search\\SearchWindow.xaml.cs",
               "RelativeDocumentMoniker": "Search\\SearchWindow.xaml.cs",
@@ -463,7 +512,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 19,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Yusuf\\Desktop\\Last\\MusicAppV2\\MusicApp\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
@@ -475,7 +524,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 40,
               "Title": "ProfileWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Yusuf\\Desktop\\Last\\MusicAppV2\\MusicApp\\Profile\\ProfileWindow.xaml.cs",
               "RelativeDocumentMoniker": "Profile\\ProfileWindow.xaml.cs",
@@ -487,7 +536,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 29,
               "Title": "Cancel_Subscription.xaml",
               "DocumentMoniker": "C:\\Users\\nicoi\\OneDrive\\Escritorio\\MusicApp-main\\MusicApp\\Payment\\Cancel_Subscription.xaml",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\nicoi\\OneDrive\\Escritorio\\MusicApp-main\\MusicApp\\Payment\\Cancel_Subscription.xaml",
@@ -498,7 +547,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 45,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Yusuf\\Desktop\\Last\\MusicAppV2\\MusicApp\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
@@ -509,7 +558,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 46,
               "Title": "LoginWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Yusuf\\Desktop\\Last\\MusicAppV2\\MusicApp\\LoginWindow.xaml",
               "RelativeDocumentMoniker": "LoginWindow.xaml",
@@ -520,7 +569,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 47,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\Yusuf\\Desktop\\Last\\MusicAppV2\\MusicApp\\App.xaml",
               "RelativeDocumentMoniker": "App.xaml",
@@ -532,7 +581,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 30,
               "Title": "ContactSupport.xaml.cs",
               "DocumentMoniker": "C:\\Users\\nicoi\\OneDrive\\Escritorio\\MusicApp-main\\MusicApp\\Payment\\ContactSupport.xaml.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\nicoi\\OneDrive\\Escritorio\\MusicApp-main\\MusicApp\\Payment\\ContactSupport.xaml.cs",
@@ -544,7 +593,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 31,
               "Title": "ManageSubscription.xaml",
               "DocumentMoniker": "C:\\Users\\nicoi\\OneDrive\\Escritorio\\MusicApp-main\\MusicApp\\Payment\\ManageSubscription.xaml",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\nicoi\\OneDrive\\Escritorio\\MusicApp-main\\MusicApp\\Payment\\ManageSubscription.xaml",
@@ -555,7 +604,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 32,
               "Title": "ContactSupport.xaml",
               "DocumentMoniker": "C:\\Users\\nicoi\\OneDrive\\Escritorio\\MusicApp-main\\MusicApp\\Payment\\ContactSupport.xaml",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\nicoi\\OneDrive\\Escritorio\\MusicApp-main\\MusicApp\\Payment\\ContactSupport.xaml",
@@ -566,7 +615,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 33,
               "Title": "Cancel_Subscription.xaml.cs",
               "DocumentMoniker": "C:\\Users\\nicoi\\OneDrive\\Escritorio\\MusicApp-main\\MusicApp\\Payment\\Cancel_Subscription.xaml.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\nicoi\\OneDrive\\Escritorio\\MusicApp-main\\MusicApp\\Payment\\Cancel_Subscription.xaml.cs",
@@ -578,7 +627,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 20,
               "Title": "Cancel_Subscription.g.cs",
               "DocumentMoniker": "C:\\Users\\nicoi\\OneDrive\\Escritorio\\MusicApp-main\\MusicApp\\obj\\Debug\\net8.0-windows\\Payment\\Cancel_Subscription.g.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\nicoi\\OneDrive\\Escritorio\\MusicApp-main\\MusicApp\\obj\\Debug\\net8.0-windows\\Payment\\Cancel_Subscription.g.cs",
@@ -590,7 +639,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 34,
               "Title": "Payment_Management.xaml",
               "DocumentMoniker": "C:\\Users\\nicoi\\OneDrive\\Escritorio\\MusicApp-main\\MusicApp\\Payment\\Payment_Management.xaml",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\nicoi\\OneDrive\\Escritorio\\MusicApp-main\\MusicApp\\Payment\\Payment_Management.xaml",
@@ -601,7 +650,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 21,
               "Title": "Payment_Management.g.cs",
               "DocumentMoniker": "C:\\Users\\nicoi\\OneDrive\\Escritorio\\MusicApp-main\\MusicApp\\obj\\Debug\\net8.0-windows\\Payment\\Payment_Management.g.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\nicoi\\OneDrive\\Escritorio\\MusicApp-main\\MusicApp\\obj\\Debug\\net8.0-windows\\Payment\\Payment_Management.g.cs",
@@ -613,7 +662,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 22,
               "Title": "ContactSupport.g.cs",
               "DocumentMoniker": "C:\\Users\\nicoi\\OneDrive\\Escritorio\\MusicApp-main\\MusicApp\\obj\\Debug\\net8.0-windows\\Payment\\ContactSupport.g.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\nicoi\\OneDrive\\Escritorio\\MusicApp-main\\MusicApp\\obj\\Debug\\net8.0-windows\\Payment\\ContactSupport.g.cs",
@@ -625,7 +674,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 35,
               "Title": "Payment_Management.xaml.cs",
               "DocumentMoniker": "C:\\Users\\nicoi\\OneDrive\\Escritorio\\MusicApp-main\\MusicApp\\Payment\\Payment_Management.xaml.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\nicoi\\OneDrive\\Escritorio\\MusicApp-main\\MusicApp\\Payment\\Payment_Management.xaml.cs",
@@ -637,7 +686,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 36,
               "Title": "PaymentPlatform.xaml",
               "DocumentMoniker": "C:\\Users\\nicoi\\OneDrive\\Escritorio\\MusicApp-main\\MusicApp\\Payment\\PaymentPlatform.xaml",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\nicoi\\OneDrive\\Escritorio\\MusicApp-main\\MusicApp\\Payment\\PaymentPlatform.xaml",
@@ -648,7 +697,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 23,
               "Title": "PaymentPlatform.g.cs",
               "DocumentMoniker": "C:\\Users\\nicoi\\OneDrive\\Escritorio\\MusicApp-main\\MusicApp\\obj\\Debug\\net8.0-windows\\Payment\\PaymentPlatform.g.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\nicoi\\OneDrive\\Escritorio\\MusicApp-main\\MusicApp\\obj\\Debug\\net8.0-windows\\Payment\\PaymentPlatform.g.cs",
@@ -660,7 +709,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 24,
               "Title": "ManageSubscription.g.cs",
               "DocumentMoniker": "C:\\Users\\nicoi\\OneDrive\\Escritorio\\MusicApp-main\\MusicApp\\obj\\Debug\\net8.0-windows\\Payment\\ManageSubscription.g.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\nicoi\\OneDrive\\Escritorio\\MusicApp-main\\MusicApp\\obj\\Debug\\net8.0-windows\\Payment\\ManageSubscription.g.cs",
@@ -672,7 +721,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 37,
               "Title": "SubscriptionOption.cs",
               "DocumentMoniker": "C:\\Users\\nicoi\\OneDrive\\Escritorio\\MusicApp-main\\MusicApp\\Payment\\SubscriptionOption.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\nicoi\\OneDrive\\Escritorio\\MusicApp-main\\MusicApp\\Payment\\SubscriptionOption.cs",
@@ -684,7 +733,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 38,
               "Title": "PaymentPlatform.xaml.cs",
               "DocumentMoniker": "C:\\Users\\nicoi\\OneDrive\\Escritorio\\MusicApp-main\\MusicApp\\Payment\\PaymentPlatform.xaml.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\nicoi\\OneDrive\\Escritorio\\MusicApp-main\\MusicApp\\Payment\\PaymentPlatform.xaml.cs",
@@ -696,7 +745,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 39,
               "Title": "ManageSubscription.xaml.cs",
               "DocumentMoniker": "C:\\Users\\nicoi\\OneDrive\\Escritorio\\MusicApp-main\\MusicApp\\Payment\\ManageSubscription.xaml.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\nicoi\\OneDrive\\Escritorio\\MusicApp-main\\MusicApp\\Payment\\ManageSubscription.xaml.cs",
@@ -708,7 +757,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 48,
               "Title": "ChatWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Yusuf\\Desktop\\Last\\MusicAppV2\\MusicApp\\Chat\\MVVM\\View\\ChatWindow.xaml.cs",
               "RelativeDocumentMoniker": "Chat\\MVVM\\View\\ChatWindow.xaml.cs",
@@ -720,7 +769,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 49,
               "Title": "ProfileWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Yusuf\\Desktop\\Last\\MusicAppV2\\MusicApp\\Profile\\ProfileWindow.xaml",
               "RelativeDocumentMoniker": "Profile\\ProfileWindow.xaml",
@@ -731,7 +780,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 27,
               "Title": "PacketBuilder.cs",
               "DocumentMoniker": "C:\\Users\\josel\\OneDrive\\Escritorio\\informatica\\SOFTWARE ENGINEERING\\MusicAppProject\\ChatServer\\Net\\IO\\PacketBuilder.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\josel\\OneDrive\\Escritorio\\informatica\\SOFTWARE ENGINEERING\\MusicAppProject\\ChatServer\\Net\\IO\\PacketBuilder.cs",
@@ -743,7 +792,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 28,
               "Title": "Client.cs",
               "DocumentMoniker": "C:\\Users\\josel\\OneDrive\\Escritorio\\informatica\\SOFTWARE ENGINEERING\\MusicAppProject\\ChatServer\\Client.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\josel\\OneDrive\\Escritorio\\informatica\\SOFTWARE ENGINEERING\\MusicAppProject\\ChatServer\\Client.cs",
@@ -755,7 +804,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 50,
               "Title": "SearchWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Yusuf\\Desktop\\Last\\MusicAppV2\\MusicApp\\Search\\SearchWindow.xaml",
               "RelativeDocumentMoniker": "Search\\SearchWindow.xaml",
@@ -766,7 +815,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 25,
               "Title": "MainWindow.g.cs",
               "DocumentMoniker": "C:\\Users\\josel\\OneDrive\\Escritorio\\informatica\\SOFTWARE ENGINEERING\\MusicAppProject\\MusicApp\\obj\\Debug\\net8.0-windows\\Chat\\MVVM\\View\\MainWindow.g.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\josel\\OneDrive\\Escritorio\\informatica\\SOFTWARE ENGINEERING\\MusicAppProject\\MusicApp\\obj\\Debug\\net8.0-windows\\Chat\\MVVM\\View\\MainWindow.g.cs",
@@ -778,7 +827,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 26,
               "Title": "MainWindow.g.cs",
               "DocumentMoniker": "C:\\Users\\Yusuf\\Desktop\\Last\\MusicAppV2\\MusicApp\\obj\\Debug\\net8.0-windows\\MainWindow.g.cs",
               "RelativeDocumentMoniker": "obj\\Debug\\net8.0-windows\\MainWindow.g.cs",
