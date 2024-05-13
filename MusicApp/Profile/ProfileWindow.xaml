@@ -1,0 +1,97 @@
+﻿<Window x:Class="MusicApp.Profile.ProfileWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="Music App" Height="450" Width="800">
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="#FF1DB954"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Margin" Value="0 0 10 0"/>
+            <Setter Property="Padding" Value="10 5"/>
+            <Setter Property="MinWidth" Value="80"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="1" CornerRadius="5">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#FF168F3B"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Background" Value="#FF0B5A23"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <!-- Biography -->
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label Content="Biography:" Margin="10"/>
+            <TextBox x:Name="txtBiography" Margin="10" MaxHeight="100" VerticalScrollBarVisibility="Auto" Grid.Column="1"/>
+            <Button Content="Save Biography" Margin="10" Click="SaveBiography_Click" Grid.Column="2" HorizontalAlignment="Right"/>
+        </Grid>
+
+        <!-- Profile Picture -->
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label Content="Profile Picture:" Margin="10"/>
+            <Border Grid.Row="1" Grid.Column="1" Width="100" Height="100" Background="LightGray" CornerRadius="50">
+                <Image x:Name="imgProfilePicture" Source="default.jpg" Stretch="UniformToFill"/>
+            </Border>
+            <Button Content="Change Picture" Margin="10" Click="ChangeProfilePicture_Click" Grid.Column="2" HorizontalAlignment="Right"/>
+        </Grid>
+
+        <!-- Saved Songs -->
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Label Content="Saved Songs:" Margin="10"/>
+            <ListBox x:Name="lstSavedSongs" Margin="10" Background="#F0F0F0" BorderThickness="0" Padding="5" Grid.Column="1"/>
+            <StackPanel Grid.Row="2" Grid.Column="2">
+                <TextBox x:Name="txtNewSavedSong" Margin="0 0 10 0" BorderThickness="1" />
+                <StackPanel Orientation="Horizontal">
+                    <Button Content="Add Song" Click="AddSavedSong_Click" Margin="0 10 10 0"/>
+                    <Button Content="Remove Song" Click="RemoveSavedSong_Click"/>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+
+        <!-- Playlists -->
+        <Grid Grid.Row="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Label Content="Playlists:" Margin="10"/>
+            <ListBox x:Name="lstPlaylists" Margin="10" Background="#F0F0F0" BorderThickness="0" Padding="5" Grid.Column="1"/>
+            <StackPanel Grid.Row="3" Grid.Column="2">
+                <TextBox x:Name="txtNewPlaylist" Margin="0 0 10 0" BorderThickness="1"/>
+                <StackPanel Orientation="Horizontal">
+                    <Button Content="Add Playlist" Click="AddPlaylist_Click" Margin="0 10 10 0"/>
+                    <Button Content="Remove Playlist" Click="RemovePlaylist_Click"/>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+    </Grid>
+
+</Window>

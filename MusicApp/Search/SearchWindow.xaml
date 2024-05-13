@@ -1,0 +1,61 @@
+﻿<Window x:Class="MusicApp.Search.SearchWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Search - Music App" Height="600" Width="800"
+        Background="#121212" FontFamily="Helvetica Neue, Helvetica, Arial, sans-serif">
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Border Background="#191414" BorderBrush="#888" BorderThickness="1" CornerRadius="10" Margin="40" >
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <TextBlock Text="Search" FontSize="24" Foreground="#9f61e2" HorizontalAlignment="Center" Margin="0,20" />
+
+                <StackPanel x:Name="searchArea" Grid.Row="1" Margin="20">
+                    <TextBox x:Name="searchInput" Text="Enter keywords to search" Background="#333" Foreground="White"
+                             Padding="10" Margin="0,10" BorderThickness="0" BorderBrush="Transparent" />
+                        <ComboBox x:Name="filterComboBox" SelectedIndex="0" Margin="0,10" SelectionChanged="FilterChanged">
+                        <ComboBoxItem Content="No filter" />
+                        <ComboBoxItem Content="Song" />
+                        <ComboBoxItem Content="Artist" />
+                        <ComboBoxItem Content="Album" />
+                        <ComboBoxItem Content="Genre" />
+                        <ComboBoxItem Content="User" />
+                    </ComboBox>
+
+                    <TextBox x:Name="genreInput" Text="Enter genre to filter" Background="#333" Foreground="White"
+                    Padding="10" Margin="0,10" BorderThickness="0" BorderBrush="Transparent" Visibility="Collapsed"/>
+
+                    <ComboBox x:Name="sortComboBox" SelectedIndex="0" Margin="0,10">
+                        <ComboBoxItem Content="Relevance" />
+                        <ComboBoxItem Content="Popularity" />
+                        <ComboBoxItem Content="Release Date" />
+                        <ComboBoxItem Content="Alphabetical" />
+                    </ComboBox>
+                    <Button Content="Search" Background="#1DB954" Foreground="White" Padding="10" Margin="0,10" BorderThickness="0"
+                            HorizontalAlignment="Stretch" Click="SearchButton" />
+
+                    <StackPanel x:Name="searchResultsStackPanel" Grid.Column="1" Height="Auto" Width="Auto" Margin="427,60,0,0" Grid.Row="2" VerticalAlignment="Top" HorizontalAlignment="Left"  />
+                </StackPanel>
+            </Grid>
+        </Border>
+    </Grid>
+    </ScrollViewer>
+</Window>
+

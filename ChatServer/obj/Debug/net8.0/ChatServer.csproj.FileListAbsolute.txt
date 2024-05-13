@@ -1,0 +1,47 @@
+C:\Users\Miguel\Source\Repos\MiguelSalinasE\chatPrueba\ChatServer\bin\Debug\net8.0\ChatServer.exe
+C:\Users\Miguel\Source\Repos\MiguelSalinasE\chatPrueba\ChatServer\bin\Debug\net8.0\ChatServer.deps.json
+C:\Users\Miguel\Source\Repos\MiguelSalinasE\chatPrueba\ChatServer\bin\Debug\net8.0\ChatServer.runtimeconfig.json
+C:\Users\Miguel\Source\Repos\MiguelSalinasE\chatPrueba\ChatServer\bin\Debug\net8.0\ChatServer.dll
+C:\Users\Miguel\Source\Repos\MiguelSalinasE\chatPrueba\ChatServer\bin\Debug\net8.0\ChatServer.pdb
+C:\Users\Miguel\Source\Repos\MiguelSalinasE\chatPrueba\ChatServer\obj\Debug\net8.0\ChatServer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Miguel\Source\Repos\MiguelSalinasE\chatPrueba\ChatServer\obj\Debug\net8.0\ChatServer.AssemblyInfoInputs.cache
+C:\Users\Miguel\Source\Repos\MiguelSalinasE\chatPrueba\ChatServer\obj\Debug\net8.0\ChatServer.AssemblyInfo.cs
+C:\Users\Miguel\Source\Repos\MiguelSalinasE\chatPrueba\ChatServer\obj\Debug\net8.0\ChatServer.csproj.CoreCompileInputs.cache
+C:\Users\Miguel\Source\Repos\MiguelSalinasE\chatPrueba\ChatServer\obj\Debug\net8.0\ChatServer.sourcelink.json
+C:\Users\Miguel\Source\Repos\MiguelSalinasE\chatPrueba\ChatServer\obj\Debug\net8.0\ChatServer.dll
+C:\Users\Miguel\Source\Repos\MiguelSalinasE\chatPrueba\ChatServer\obj\Debug\net8.0\refint\ChatServer.dll
+C:\Users\Miguel\Source\Repos\MiguelSalinasE\chatPrueba\ChatServer\obj\Debug\net8.0\ChatServer.pdb
+C:\Users\Miguel\Source\Repos\MiguelSalinasE\chatPrueba\ChatServer\obj\Debug\net8.0\ChatServer.genruntimeconfig.cache
+C:\Users\Miguel\Source\Repos\MiguelSalinasE\chatPrueba\ChatServer\obj\Debug\net8.0\ref\ChatServer.dll
+C:\Users\josel\OneDrive\Escritorio\informatica\SOFTWARE ENGINEERING\chatPrueba\ChatServer\bin\Debug\net8.0\ChatServer.exe
+C:\Users\josel\OneDrive\Escritorio\informatica\SOFTWARE ENGINEERING\chatPrueba\ChatServer\bin\Debug\net8.0\ChatServer.deps.json
+C:\Users\josel\OneDrive\Escritorio\informatica\SOFTWARE ENGINEERING\chatPrueba\ChatServer\bin\Debug\net8.0\ChatServer.runtimeconfig.json
+C:\Users\josel\OneDrive\Escritorio\informatica\SOFTWARE ENGINEERING\chatPrueba\ChatServer\bin\Debug\net8.0\ChatServer.dll
+C:\Users\josel\OneDrive\Escritorio\informatica\SOFTWARE ENGINEERING\chatPrueba\ChatServer\bin\Debug\net8.0\ChatServer.pdb
+C:\Users\josel\OneDrive\Escritorio\informatica\SOFTWARE ENGINEERING\chatPrueba\ChatServer\obj\Debug\net8.0\ChatServer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\josel\OneDrive\Escritorio\informatica\SOFTWARE ENGINEERING\chatPrueba\ChatServer\obj\Debug\net8.0\ChatServer.AssemblyInfoInputs.cache
+C:\Users\josel\OneDrive\Escritorio\informatica\SOFTWARE ENGINEERING\chatPrueba\ChatServer\obj\Debug\net8.0\ChatServer.AssemblyInfo.cs
+C:\Users\josel\OneDrive\Escritorio\informatica\SOFTWARE ENGINEERING\chatPrueba\ChatServer\obj\Debug\net8.0\ChatServer.csproj.CoreCompileInputs.cache
+C:\Users\josel\OneDrive\Escritorio\informatica\SOFTWARE ENGINEERING\chatPrueba\ChatServer\obj\Debug\net8.0\ChatServer.sourcelink.json
+C:\Users\josel\OneDrive\Escritorio\informatica\SOFTWARE ENGINEERING\chatPrueba\ChatServer\obj\Debug\net8.0\ChatServer.dll
+C:\Users\josel\OneDrive\Escritorio\informatica\SOFTWARE ENGINEERING\chatPrueba\ChatServer\obj\Debug\net8.0\refint\ChatServer.dll
+C:\Users\josel\OneDrive\Escritorio\informatica\SOFTWARE ENGINEERING\chatPrueba\ChatServer\obj\Debug\net8.0\ChatServer.pdb
+C:\Users\josel\OneDrive\Escritorio\informatica\SOFTWARE ENGINEERING\chatPrueba\ChatServer\obj\Debug\net8.0\ChatServer.genruntimeconfig.cache
+C:\Users\josel\OneDrive\Escritorio\informatica\SOFTWARE ENGINEERING\chatPrueba\ChatServer\obj\Debug\net8.0\ref\ChatServer.dll
+C:\Users\josel\OneDrive\Escritorio\informatica\SOFTWARE ENGINEERING\MusicAppProject\ChatServer\bin\Debug\net8.0\ChatServer.exe
+C:\Users\josel\OneDrive\Escritorio\informatica\SOFTWARE ENGINEERING\MusicAppProject\ChatServer\bin\Debug\net8.0\ChatServer.deps.json
+C:\Users\josel\OneDrive\Escritorio\informatica\SOFTWARE ENGINEERING\MusicAppProject\ChatServer\bin\Debug\net8.0\ChatServer.runtimeconfig.json
+C:\Users\josel\OneDrive\Escritorio\informatica\SOFTWARE ENGINEERING\MusicAppProject\ChatServer\bin\Debug\net8.0\ChatServer.dll
+C:\Users\josel\OneDrive\Escritorio\informatica\SOFTWARE ENGINEERING\MusicAppProject\ChatServer\bin\Debug\net8.0\ChatServer.pdb
+C:\Users\josel\OneDrive\Escritorio\informatica\SOFTWARE ENGINEERING\MusicAppProject\ChatServer\bin\Debug\net8.0\ChatServer.xml
+C:\Users\josel\OneDrive\Escritorio\informatica\SOFTWARE ENGINEERING\MusicAppProject\ChatServer\obj\Debug\net8.0\ChatServer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\josel\OneDrive\Escritorio\informatica\SOFTWARE ENGINEERING\MusicAppProject\ChatServer\obj\Debug\net8.0\ChatServer.AssemblyInfoInputs.cache
+C:\Users\josel\OneDrive\Escritorio\informatica\SOFTWARE ENGINEERING\MusicAppProject\ChatServer\obj\Debug\net8.0\ChatServer.AssemblyInfo.cs
+C:\Users\josel\OneDrive\Escritorio\informatica\SOFTWARE ENGINEERING\MusicAppProject\ChatServer\obj\Debug\net8.0\ChatServer.csproj.CoreCompileInputs.cache
+C:\Users\josel\OneDrive\Escritorio\informatica\SOFTWARE ENGINEERING\MusicAppProject\ChatServer\obj\Debug\net8.0\ChatServer.sourcelink.json
+C:\Users\josel\OneDrive\Escritorio\informatica\SOFTWARE ENGINEERING\MusicAppProject\ChatServer\obj\Debug\net8.0\ChatServer.dll
+C:\Users\josel\OneDrive\Escritorio\informatica\SOFTWARE ENGINEERING\MusicAppProject\ChatServer\obj\Debug\net8.0\refint\ChatServer.dll
+C:\Users\josel\OneDrive\Escritorio\informatica\SOFTWARE ENGINEERING\MusicAppProject\ChatServer\obj\Debug\net8.0\ChatServer.xml
+C:\Users\josel\OneDrive\Escritorio\informatica\SOFTWARE ENGINEERING\MusicAppProject\ChatServer\obj\Debug\net8.0\ChatServer.pdb
+C:\Users\josel\OneDrive\Escritorio\informatica\SOFTWARE ENGINEERING\MusicAppProject\ChatServer\obj\Debug\net8.0\ChatServer.genruntimeconfig.cache
+C:\Users\josel\OneDrive\Escritorio\informatica\SOFTWARE ENGINEERING\MusicAppProject\ChatServer\obj\Debug\net8.0\ref\ChatServer.dll

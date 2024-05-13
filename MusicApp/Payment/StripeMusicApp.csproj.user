@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Cancel_Subscription.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ContactSupport.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ManageSubscription.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="PaymentPlatform.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Payment_Management.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Cancel_Subscription.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ContactSupport.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ManageSubscription.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PaymentPlatform.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Payment_Management.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,196 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MusicApp</name>
+    </assembly>
+    <members>
+        <member name="T:MusicApp.App">
+            <summary>
+            Interaction logic for App.xaml
+            </summary>
+            <summary>
+            App
+            </summary>
+        </member>
+        <member name="M:MusicApp.App.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:MusicApp.App.Main">
+            <summary>
+            Application Entry Point.
+            </summary>
+        </member>
+        <member name="T:MusicApp.Chat.MVVM.View.ChatWindow">
+            <summary>
+            Interaction logic for MainWindow.xaml
+            </summary>
+            <summary>
+            ChatWindow
+            </summary>
+        </member>
+        <member name="M:MusicApp.Chat.MVVM.View.ChatWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:MusicApp.LoginWindow">
+            <summary>
+            Lógica de interacción para Window1.xaml
+            </summary>
+            <summary>
+            LoginWindow
+            </summary>
+        </member>
+        <member name="M:MusicApp.LoginWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:MusicApp.MainWindow">
+            <summary>
+            Interaction logic for MainWindow.xaml
+            </summary>
+            <summary>
+            MainWindow
+            </summary>
+        </member>
+        <member name="M:MusicApp.MainWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:MusicApp.Payment.Cancel_Subscription">
+            <summary>
+            Lógica de interacción para Cancel_Subscription.xaml
+            </summary>
+            <summary>
+            Cancel_Subscription
+            </summary>
+        </member>
+        <member name="M:MusicApp.Payment.Cancel_Subscription.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:MusicApp.Payment.ContactSupport">
+            <summary>
+            Lógica de interacción para ContactSupport.xaml
+            </summary>
+            <summary>
+            ContactSupport
+            </summary>
+        </member>
+        <member name="M:MusicApp.Payment.ContactSupport.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:MusicApp.Payment.ManageSubscription">
+            <summary>
+            Lógica de interacción para ManageSubscription.xaml
+            </summary>
+            <summary>
+            ManageSubscription
+            </summary>
+        </member>
+        <member name="M:MusicApp.Payment.ManageSubscription.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:MusicApp.Payment.PaymentPlatform">
+            <summary>
+            Lógica de interacción para PaymentPlatform.xaml
+            </summary>
+            <summary>
+            PaymentPlatform
+            </summary>
+        </member>
+        <member name="M:MusicApp.Payment.PaymentPlatform.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:MusicApp.Payment.Payment_Management">
+            <summary>
+            Lógica de interacción para Payment_Management.xaml
+            </summary>
+            <summary>
+            Payment_Management
+            </summary>
+        </member>
+        <member name="M:MusicApp.Payment.Payment_Management.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:MusicApp.Profile.ProfileWindow">
+            <summary>
+            ProfileWindow
+            </summary>
+        </member>
+        <member name="M:MusicApp.Profile.ProfileWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:MusicApp.Search.SearchResultItemControl">
+            <summary>
+            Lógica de interacción para SearchResultItemControl.xaml
+            </summary>
+            <summary>
+            SearchResultItemControl
+            </summary>
+        </member>
+        <member name="M:MusicApp.Search.SearchResultItemControl.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:MusicApp.Search.SearchWindow">
+            <summary>
+            Lógica de interacción para SearchWindow.xaml
+            </summary>
+            <summary>
+            SearchWindow
+            </summary>
+        </member>
+        <member name="M:MusicApp.Search.SearchWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:XamlGeneratedNamespace.GeneratedInternalTypeHelper">
+            <summary>
+            GeneratedInternalTypeHelper
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateInstance(System.Type,System.Globalization.CultureInfo)">
+            <summary>
+            CreateInstance
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.GetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            GetPropertyValue
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.SetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            SetPropertyValue
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateDelegate(System.Type,System.Object,System.String)">
+            <summary>
+            CreateDelegate
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.AddEventHandler(System.Reflection.EventInfo,System.Object,System.Delegate)">
+            <summary>
+            AddEventHandler
+            </summary>
+        </member>
+    </members>
+</doc>

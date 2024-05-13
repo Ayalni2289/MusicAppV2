@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\email_icon.png" />
+    <None Remove="Images\phone_icon.png" />
+    <None Remove="profile_pic.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Stripe.net" Version="44.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\email_icon.png" />
+    <Resource Include="Images\phone_icon.png" />
+    <Resource Include="Images\profile_pic.jpg" />
+  </ItemGroup>
+
+</Project>

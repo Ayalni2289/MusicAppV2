@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34701.34
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MusicApp", "MusicApp.csproj", "{46D610E0-6594-482E-B894-64E5C3794DBA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChatServer", "..\ChatServer\ChatServer.csproj", "{111F793F-20D0-424E-8A0C-F460209374E2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{46D610E0-6594-482E-B894-64E5C3794DBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46D610E0-6594-482E-B894-64E5C3794DBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46D610E0-6594-482E-B894-64E5C3794DBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46D610E0-6594-482E-B894-64E5C3794DBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{111F793F-20D0-424E-8A0C-F460209374E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{111F793F-20D0-424E-8A0C-F460209374E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{111F793F-20D0-424E-8A0C-F460209374E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{111F793F-20D0-424E-8A0C-F460209374E2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A934D42C-CD81-4992-A522-AE168EC6D53A}
+	EndGlobalSection
+EndGlobal

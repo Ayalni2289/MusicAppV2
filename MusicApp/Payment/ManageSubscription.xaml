@@ -1,0 +1,85 @@
+﻿<Window x:Class="MusicApp.Payment.ManageSubscription"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="ManageSubscription" Height="451" Width="915">
+    <Window.Resources>
+        <Style TargetType="Border" x:Key="PlanStyle">
+            <Setter Property="Background" Value="#333"/>
+            <Setter Property="Width" Value="180"/>
+            <Setter Property="Height" Value="200"/>
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="Padding" Value="20"/>
+            <Setter Property="CornerRadius" Value="10"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+        </Style>
+        <Style TargetType="Button" x:Key="SubscribeButtonStyle">
+            <Setter Property="Background" Value="#1DB954"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Padding" Value="10,20"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Margin" Value="0,10,0,0"/>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#17a74b"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+    <Grid Background="#191414" Margin="0,0,0,-6">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="26*"/>
+            <ColumnDefinition Width="175*"/>
+            <ColumnDefinition Width="137*"/>
+            <ColumnDefinition Width="362*"/>
+            <ColumnDefinition Width="400*"/>
+        </Grid.ColumnDefinitions>
+        <Border Background="#191414" CornerRadius="10" Margin="18,47,0,0" Padding="20"
+                HorizontalAlignment="Left" VerticalAlignment="Top" Grid.ColumnSpan="4" Grid.Column="1">
+            <StackPanel>
+                <TextBlock Text="Manage Subscription" FontSize="24" FontWeight="Bold"
+                           Foreground="#9f61e2" HorizontalAlignment="Center" Margin="0,0,0,20"/>
+                <WrapPanel HorizontalAlignment="Center" VerticalAlignment="Top" Orientation="Horizontal">
+                    <Border Style="{StaticResource PlanStyle}">
+                        <StackPanel>
+                            <TextBlock Text="Monthly Plan" FontSize="18" FontWeight="Bold"/>
+                            <TextBlock Text="Price: $4.95/month"/>
+                            <TextBlock Text="Next Expire Date: [Calculate and Display Here]"/>
+                            <Button Style="{StaticResource SubscribeButtonStyle}" Click="MonthlyPlan_Click">Subscribe</Button>
+                        </StackPanel>
+                    </Border>
+                    <Border Style="{StaticResource PlanStyle}">
+                        <StackPanel>
+                            <TextBlock Text="3-Month Plan" FontSize="18" FontWeight="Bold"/>
+                            <TextBlock Text="Price: $12.99 for 3 months"/>
+                            <TextBlock Text="Next Expire Date: [Calculate and Display Here]"/>
+                            <Button Style="{StaticResource SubscribeButtonStyle}" Click="ThreeMonthPlan_Click">Subscribe</Button>
+                        </StackPanel>
+                    </Border>
+                    <Border Style="{StaticResource PlanStyle}">
+                        <StackPanel>
+                            <TextBlock Text="6-Month Plan" FontSize="18" FontWeight="Bold"/>
+                            <TextBlock Text="Price: $22.90 for 6 months"/>
+                            <TextBlock Text="Next Expire Date: [Calculate and Display Here]"/>
+                            <Button Style="{StaticResource SubscribeButtonStyle}" Click="SixMonthPlan_Click">Subscribe</Button>
+                        </StackPanel>
+                    </Border>
+                    <Border Style="{StaticResource PlanStyle}">
+                        <StackPanel>
+                            <TextBlock Text="Yearly Plan" FontSize="18" FontWeight="Bold"/>
+                            <TextBlock Text="Price: $39.95/year"/>
+                            <TextBlock Text="Next Expire Date: [Calculate and Display Here]"/>
+                            <Button Style="{StaticResource SubscribeButtonStyle}" Click="YearlyPlan_Click">Subscribe</Button>
+                        </StackPanel>
+                    </Border>
+                </WrapPanel>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>
+    
