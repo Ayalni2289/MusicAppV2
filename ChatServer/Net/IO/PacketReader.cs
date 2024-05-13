@@ -9,10 +9,10 @@ namespace ChatServer.Net.IO
 {
     class PacketReader : BinaryReader
     {
-        private NetworkStream _ns;
-        public PacketReader(NetworkStream ns) : base(ns)
+        private NetworkStream networkStream;
+        public PacketReader(NetworkStream _networkSystem) : base(_networkSystem)
         {
-            _ns = ns;
+            networkStream = _networkSystem;
         }
 
         public String ReadMessage()
@@ -20,11 +20,11 @@ namespace ChatServer.Net.IO
             byte[] msgBuffer;
             var length = ReadInt32();
             msgBuffer = new byte[length];
-            _ns.Read(msgBuffer, 0, length);
+            networkStream.Read(msgBuffer, 0, length);
 
-            var msg = Encoding.ASCII.GetString(msgBuffer);
+            var message = Encoding.ASCII.GetString(msgBuffer);
 
-            return msg;
+            return message;
         }
     }
 }
