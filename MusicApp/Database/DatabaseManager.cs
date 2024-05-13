@@ -38,9 +38,9 @@ namespace MusicApp.Database
                     connection.Close();
                 }
             }
-            catch(Exception ex)
+            catch(Exception _exception)
             {
-                Console.WriteLine("Error while inserting values in the database: " + ex.Message);
+                Console.WriteLine("Error while inserting values in the database: " + _exception.Message);
                 return false;
             }
 
@@ -115,9 +115,9 @@ namespace MusicApp.Database
                 }
 
             }
-            catch (Exception ex)
+            catch (Exception _exception)
             {
-                Console.WriteLine("Error while retrieving items from the database: " + ex.Message);
+                Console.WriteLine("Error while retrieving items from the database: " + _exception.Message);
             };
             return searchItems;
         }
@@ -152,9 +152,9 @@ namespace MusicApp.Database
                     connection.Close();
                 }
             }
-            catch (Exception ex)
+            catch (Exception _exception)
             {
-                Console.WriteLine("Error while retrieving items from the database: " + ex.Message);
+                Console.WriteLine("Error while retrieving items from the database: " + _exception.Message);
             };
             return searchItems;
         }
@@ -214,9 +214,9 @@ namespace MusicApp.Database
                     connection.Close();
                 }
             }
-            catch (Exception ex)
+            catch (Exception _exception)
             {
-                Console.WriteLine("Error while retrieving items from the database: " + ex.Message);
+                Console.WriteLine("Error while retrieving items from the database: " + _exception.Message);
             };
             return searchItems;
         }
@@ -267,9 +267,9 @@ namespace MusicApp.Database
                     connection.Close();
                 }
             }
-            catch (Exception ex)
+            catch (Exception _exception)
             {
-                Console.WriteLine("Error while retrieving items from the database: " + ex.Message);
+                Console.WriteLine("Error while retrieving items from the database: " + _exception.Message);
             };
             return searchItems;
         }
