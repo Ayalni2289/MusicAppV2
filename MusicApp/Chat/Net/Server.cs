@@ -1,5 +1,6 @@
 ﻿using MusicApp.Chat.Net.IO;
 using System.Net.Sockets;
+using System.Reflection.Emit;
 using System.Windows;
 
 namespace MusicApp.Chat.Net
@@ -36,6 +37,12 @@ namespace MusicApp.Chat.Net
 
             }
         }
+        public enum OpCode
+        {
+            Connect = 1,
+            Message = 2,
+            Disconnect = 3
+        }
 
         private void ReadPackets()
         {
@@ -43,18 +50,16 @@ namespace MusicApp.Chat.Net
             {
                 while (true)
                 {
-                    // TODO : differ between opcodes, by doing that function we could send files, images and all of that
-
                     var opcode = PacketReader.ReadByte();
                     switch (opcode)
                     {
-                        case 1:
+                        case (byte)OpCode.Connect:
                             connectedEvent?.Invoke();
                             break;
-                        case 2:
+                        case (byte)OpCode.Message:
                             msgReceivedEvent?.Invoke();
                             break;
-                        case 3:
+                        case (byte)OpCode.Disconnect:
                             disconnectedEvent?.Invoke();
                             break;
                         default:
