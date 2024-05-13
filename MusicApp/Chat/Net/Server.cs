@@ -41,25 +41,46 @@ namespace MusicApp.Chat.Net
             {
                 while (true)
                 {
-                    // TODO : differ between opcodes, by doing that function we could send files, images and all of that
-                    var opcode = PacketReader.ReadByte();
-                    switch (opcode)
-                    {
-                        case 1:
-                            ConnectedEvent?.Invoke();
-                            break;
-                        case 2:
-                            MsgReceivedEvent?.Invoke();
-                            break;
-                        case 3:
-                            DisconnectedEvent?.Invoke();
-                            break;
-                        default:
-                            break;
-                    }
+                    byte opcode = PacketReader.ReadByte();
+                    ProcessOpcode(opcode);
                 }
             });
         }
+
+        private void ProcessOpcode(byte opcode)
+        {
+            switch (opcode)
+            {
+                case OpCode.Connected:
+                    OnConnected();
+                    break;
+                case OpCode.MessageReceived:
+                    OnMessageReceived();
+                    break;
+                case OpCode.Disconnected:
+                    OnDisconnected();
+                    break;
+                default:
+                    // Handle unknown opcode
+                    break;
+            }
+        }
+
+        private void OnConnected()
+        {
+            ConnectedEvent?.Invoke();
+        }
+
+        private void OnMessageReceived()
+        {
+            MsgReceivedEvent?.Invoke();
+        }
+
+        private void OnDisconnected()
+        {
+            DisconnectedEvent?.Invoke();
+        }
+
 
         public void SendMessageToServer(string messsage)
         {
