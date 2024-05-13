@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Yusuf\\Desktop\\Last\\MusicAppV2\\ChatServer\\ChatServer.csproj": {}
+    "C:\\Users\\Yusuf\\Desktop\\MusicApp-main\\MusicApp-main\\ChatServer\\ChatServer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Yusuf\\Desktop\\Last\\MusicAppV2\\ChatServer\\ChatServer.csproj": {
+    "C:\\Users\\Yusuf\\Desktop\\MusicApp-main\\MusicApp-main\\ChatServer\\ChatServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Yusuf\\Desktop\\Last\\MusicAppV2\\ChatServer\\ChatServer.csproj",
+        "projectUniqueName": "C:\\Users\\Yusuf\\Desktop\\MusicApp-main\\MusicApp-main\\ChatServer\\ChatServer.csproj",
         "projectName": "ChatServer",
-        "projectPath": "C:\\Users\\Yusuf\\Desktop\\Last\\MusicAppV2\\ChatServer\\ChatServer.csproj",
+        "projectPath": "C:\\Users\\Yusuf\\Desktop\\MusicApp-main\\MusicApp-main\\ChatServer\\ChatServer.csproj",
         "packagesPath": "C:\\Users\\Yusuf\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Yusuf\\Desktop\\Last\\MusicAppV2\\ChatServer\\obj\\",
+        "outputPath": "C:\\Users\\Yusuf\\Desktop\\MusicApp-main\\MusicApp-main\\ChatServer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -48,14 +48,6 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "dependencies": {
-            "StyleCop.Analyzers": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[1.1.118, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",

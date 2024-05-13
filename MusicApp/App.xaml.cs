@@ -10,4 +10,5 @@ namespace MusicApp
     public partial class App : Application
     {
     }
+
 }

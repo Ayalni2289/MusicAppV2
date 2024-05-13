@@ -1,57 +1,67 @@
-﻿using System.Collections.ObjectModel;
-using System.Windows;
-using MusicApp.Chat.Net;
+﻿using MusicApp.Chat.Net;
 using MusicApp.Chat.MVVM.Core;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Security.Cryptography.X509Certificates;
+using System.Text;
+using System.Threading.Tasks;
 using MusicApp.Chat.MVVM.Model;
+using System.Collections.ObjectModel;
+using System.Windows;
 
 namespace MusicApp.Chat.MVVM.ViewModel
 {
-    internal class MainViewModel
+    class MainViewModel
     {
         public RelayCommand ConnectToServerCommand { get; set; }
         public RelayCommand SendMessageCommand { get; set; }
 
-        private Server server;
-        public string Username { get; set; }
-        public string Message { get; set; }
-        public ObservableCollection<UserModel> Users { get; set; }
+        private Server _server;
+        public String Username { get; set; }
+        public String Message { get; set; }
+        public ObservableCollection<UserModel> Users { get; set; } 
         public ObservableCollection<string> Messages { get; set; }
-
+        
         public MainViewModel()
         {
             Users = new ObservableCollection<UserModel>();
             Messages = new ObservableCollection<string>();
-            server = new Server();
-            server.ConnectedEvent += UserConnected;
-            server.MsgReceivedEvent += MessageReceived;
-            server.DisconnectedEvent += RemoveUser;
+            _server = new Server();
+            _server.connectedEvent += UserConnected;
+            _server.msgReceivedEvent += MessageReceived;
+            _server.disconnectedEvent += RemoveUser;
 
-            ConnectToServerCommand = new RelayCommand(o => server.ConnectToServer(Username), o => !string.IsNullOrEmpty(Username));
-            SendMessageCommand = new RelayCommand(o => server.SendMessageToServer(Message), o => !string.IsNullOrEmpty(Message));
+            ConnectToServerCommand = new RelayCommand(o => _server.ConnectToServer(Username), o => !string.IsNullOrEmpty(Username));
+            SendMessageCommand = new RelayCommand(o => _server.SendMessageToServer(Message), o => !string.IsNullOrEmpty(Message));
         }
+
         private void MessageReceived()
         {
-            var msg = server.PacketReader.ReadMessage();
+            var msg = _server.PacketReader.ReadMessage();
             Application.Current.Dispatcher.Invoke(() => Messages.Add(msg));
+
         }
 
-        // This will be used whenever we receive an '0' opcode
+        //This will be used whenever we receive an '0' opcode
         private void UserConnected()
         {
             var user = new UserModel
             {
-                UserName = server.PacketReader.ReadMessage(),
-                UID = server.PacketReader.ReadMessage(),
+                UserName = _server.PacketReader.ReadMessage(),
+                UID = _server.PacketReader.ReadMessage(),
             };
 
             if (!Users.Any(x => x.UID == user.UID))
-            {
+            { 
                 Application.Current.Dispatcher.Invoke(() => Users.Add(user));
             }
+
         }
+
         private void RemoveUser()
         {
-            var uid = server.PacketReader.ReadMessage();
+            var uid = _server.PacketReader.ReadMessage();
             var user = Users.Where(x => x.UID == uid).FirstOrDefault();
             Application.Current.Dispatcher.Invoke(() => Users.Remove(user));
         }

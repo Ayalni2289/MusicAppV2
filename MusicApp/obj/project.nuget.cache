@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "W95H6xnjKyzZXfZHsTXEzQazW3oEBnjLuMw8EU18BQ4ep56+PWVnv7Jhmwo5N7KWHQn0r/moKGXtOvFeuyyLKg==",
+  "dgSpecHash": "Aul+lTyLqeVUvxF9ds95k4yzS9cXS6TzR9MpBaYR7AQBRoP/kMrxzx/ft1fxp5C43x80bE6jQPEqR9o/5ObWow==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Yusuf\\Desktop\\Last\\MusicAppV2\\MusicApp\\MusicApp.csproj",
+  "projectFilePath": "C:\\Users\\Yusuf\\Desktop\\MusicApp-main\\MusicApp-main\\MusicApp\\MusicApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Yusuf\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\Yusuf\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
@@ -12,7 +12,6 @@
     "C:\\Users\\Yusuf\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\Yusuf\\.nuget\\packages\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\Yusuf\\.nuget\\packages\\stripe.net\\44.2.0\\stripe.net.44.2.0.nupkg.sha512",
-    "C:\\Users\\Yusuf\\.nuget\\packages\\stylecop.analyzers\\1.1.118\\stylecop.analyzers.1.1.118.nupkg.sha512",
     "C:\\Users\\Yusuf\\.nuget\\packages\\system.configuration.configurationmanager\\6.0.0\\system.configuration.configurationmanager.6.0.0.nupkg.sha512",
     "C:\\Users\\Yusuf\\.nuget\\packages\\system.data.sqlclient\\4.8.6\\system.data.sqlclient.4.8.6.nupkg.sha512",
     "C:\\Users\\Yusuf\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512",

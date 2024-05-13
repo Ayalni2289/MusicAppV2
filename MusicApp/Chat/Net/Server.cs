@@ -1,37 +1,39 @@
-﻿using System.Net.Sockets;
+﻿using MusicApp.Chat.Net.IO;
+using System.Net.Sockets;
 using System.Windows;
-using MusicApp.Chat.Net.IO;
 
 namespace MusicApp.Chat.Net
 {
-    internal class Server
+    class Server
     {
-        public TcpClient Client;
+        TcpClient _client;
         public PacketReader PacketReader;
 
-        public event Action ConnectedEvent;
-        public event Action MsgReceivedEvent;
-        public event Action DisconnectedEvent;
+        public event Action connectedEvent;
+        public event Action msgReceivedEvent;
+        public event Action disconnectedEvent;
 
         public Server()
         {
-            Client = new TcpClient();
+            _client = new TcpClient();
         }
 
-        public void ConnectToServer(string username)
+        public void ConnectToServer(String username)
         {
-            if (!Client.Connected)
+
+            if (!_client.Connected)
             {
-                Client.Connect("127.0.0.1", 7891);
-                PacketReader = new PacketReader(Client.GetStream());
+                _client.Connect("127.0.0.1", 7891);
+                PacketReader = new PacketReader(_client.GetStream());
                 if (!string.IsNullOrEmpty(username))
                 {
                     var connectPacket = new PacketBuilder();
                     connectPacket.WriteOpCode(0);
                     connectPacket.WriteString(username);
-                    Client.Client.Send(connectPacket.GetPacketBytes());
+                    _client.Client.Send(connectPacket.GetPacketBytes());
                 }
                 ReadPackets();
+
             }
         }
 
@@ -41,57 +43,37 @@ namespace MusicApp.Chat.Net
             {
                 while (true)
                 {
-                    byte opcode = PacketReader.ReadByte();
-                    ProcessOpcode(opcode);
+                    // TODO : differ between opcodes, by doing that function we could send files, images and all of that
+
+                    var opcode = PacketReader.ReadByte();
+                    switch (opcode)
+                    {
+                        case 1:
+                            connectedEvent?.Invoke();
+                            break;
+                        case 2:
+                            msgReceivedEvent?.Invoke();
+                            break;
+                        case 3:
+                            disconnectedEvent?.Invoke();
+                            break;
+                        default:
+                            break;
+                    }
                 }
             });
         }
 
-        private void ProcessOpcode(byte opcode)
-        {
-            switch (opcode)
-            {
-                case OpCode.Connected:
-                    OnConnected();
-                    break;
-                case OpCode.MessageReceived:
-                    OnMessageReceived();
-                    break;
-                case OpCode.Disconnected:
-                    OnDisconnected();
-                    break;
-                default:
-                    // Handle unknown opcode
-                    break;
-            }
-        }
-
-        private void OnConnected()
-        {
-            ConnectedEvent?.Invoke();
-        }
-
-        private void OnMessageReceived()
-        {
-            MsgReceivedEvent?.Invoke();
-        }
-
-        private void OnDisconnected()
-        {
-            DisconnectedEvent?.Invoke();
-        }
-
-
-        public void SendMessageToServer(string messsage)
+        public void SendMessageToServer(String messsage)
         {
             try
             {
                 var messagePacket = new PacketBuilder();
                 messagePacket.WriteOpCode(2);
                 messagePacket.WriteString(messsage);
-                Client.Client.Send(messagePacket.GetPacketBytes());
+                _client.Client.Send(messagePacket.GetPacketBytes());
             }
-            catch (Exception ex)
+            catch(Exception ex)
             {
                 MessageBox.Show("Please log in before sending a message", "Warning", MessageBoxButton.OK, MessageBoxImage.Exclamation);
             }

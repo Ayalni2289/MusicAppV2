@@ -1,30 +1,32 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ChatServer.Net.IO
+namespace MusicApp.Chat.Net.IO
 {
-    internal class PacketReader : BinaryReader
-    {
-        private NetworkStream networkStream;
-        public PacketReader(NetworkStream networkStream) : base(networkStream)
+    class PacketReader : BinaryReader
         {
-            this.networkStream = networkStream;
+        private NetworkStream _ns;
+        public PacketReader(NetworkStream ns) : base(ns)
+        {
+            _ns = ns;
         }
 
-        public string ReadMessage()
+        public String ReadMessage()
         {
-            byte[] messageBuffer;
+            byte[] msgBuffer;
             var length = ReadInt32();
-            messageBuffer = new byte[length];
-            networkStream.Read(messageBuffer, 0, length);
+            msgBuffer = new byte[length];
+            _ns.Read(msgBuffer, 0, length);
 
-            var message = Encoding.ASCII.GetString(messageBuffer);
+            var msg = Encoding.ASCII.GetString(msgBuffer);
 
-            return message;
+            return msg;
         }
     }
 }
+

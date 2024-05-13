@@ -1,25 +1,33 @@
-﻿using System.Net.Sockets;
-using ChatServer.Net.IO;
+﻿using ChatServer.Net.IO;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Net.Quic;
+using System.Net.Sockets;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace ChatServer
 {
-    internal class Client
+    class Client
     {
-        public string Username { get; set; }
+        public String Username { get; set; }
         public Guid UID { get; set; }
-        public TcpClient ClientSocket { get; set; }
-        public PacketReader PacketReader;
+        public TcpClient ClientSocket {  get; set; }
 
-        public Client(TcpClient client)
+        PacketReader _packetReader;
+
+
+        public Client (TcpClient client)
         {
             ClientSocket = client;
             UID = Guid.NewGuid();
-            PacketReader = new PacketReader(ClientSocket.GetStream());
-            var opcode = PacketReader.ReadByte();
+            _packetReader = new PacketReader(ClientSocket.GetStream());
+            var opcode = _packetReader.ReadByte();
             // This operation code correspond to the receiving of the packet in the server
             if (opcode == 0)
             {
-                Username = PacketReader.ReadMessage();
+                Username = _packetReader.ReadMessage();
                 Console.WriteLine($"[{DateTime.Now}]: Client has connected with the username: {Username}");
             }
             else
@@ -30,48 +38,33 @@ namespace ChatServer
             Task.Run(() => Process());
         }
 
-        public void Process()
+        void Process()
         {
-            while (true)
+            while(true)
             {
                 try
                 {
-                    var opcode = PacketReader.ReadByte();
-                    ProcessPacket(opcode);
+                    var opcode = _packetReader.ReadByte();
+                    switch (opcode)
+                    {
+                        case 2:
+                            var msg = _packetReader.ReadMessage();
+                            Console.WriteLine($"[{DateTime.Now}]: Message Received! {msg}");
+                            Program.BroadcastMessage($"[{DateTime.Now}]: [{Username}]: {msg}");
+                            break;
+                        default:
+                            break;
+                    }
                 }
                 catch (Exception)
                 {
-                    HandleDisconnect();
-                    break; // out of the loop
+                    Console.WriteLine($"[{UID.ToString()}]: Has disconnected!");
+                    Program.BroadcastDisconnect(UID.ToString());
+                    ClientSocket.Close();
+
                 }
             }
         }
 
-        private void ProcessPacket(byte opcode)
-        {
-            switch (opcode)
-            {
-                case OpCode.Message:
-                    HandleMessage();
-                    break;
-                default:
-                    // unknown opcode received
-                    break;
-            }
-        }
-
-        private void HandleMessage()
-        {
-            var message = PacketReader.ReadMessage();
-            Console.WriteLine($"[{DateTime.Now}]: Message Received! {message}");
-            Program.BroadcastMessage($"[{DateTime.Now}]: [{Username}]: {message}");
-        }
-
-        private void HandleDisconnect()
-        {
-            Console.WriteLine($"[{UID}]: Has disconnected!");
-            Program.BroadcastDisconnect(UID.ToString());
-            ClientSocket.Close();
-        }
     }
 }

@@ -36,15 +36,102 @@ namespace MusicApp.Search
             // Clear results area for the next search
             searchResultsStackPanel.Children.Clear();
 
-            // Get search results (given the inputted values in the GUI)
+            // Filter search 
             int filter = filterComboBox.SelectedIndex;
-            string genre = genreInput.Text;
+            List<SearchResultItemControl> searchItems = FilterSearch(filter);
+            
+            // Search algorithm
             string keywords = searchInput.Text;
+            List<SearchResultItemControl> searchResults = FuzzyMatchingSearch(keywords, searchItems);
+            
+            // Sort results
             int sorter = sortComboBox.SelectedIndex;
-            List<SearchResultItemControl> searchResults = SearchLogic.GetSearchResults(filter, genre, keywords, sorter);
+            searchResults = SortSearchResults(searchResults, sorter);
 
             // Show results
             DisplaySearchResults(searchResults);
+        }
+
+        private List<SearchResultItemControl> FuzzyMatchingSearch(string keywords, List<SearchResultItemControl> searchItems)
+        {
+            List<SearchResultItemControl> matches = new List<SearchResultItemControl>();
+            foreach (SearchResultItemControl item in searchItems)
+            {
+                string itemTitle = item.title.Text;
+                if (LevenshteinDistance.IsFuzzyMatch(keywords.ToLower(), itemTitle.ToLower(), 2))
+                {
+                    matches.Add(item);
+                }
+            }
+
+            return matches;
+        }
+
+        public List<SearchResultItemControl> FilterSearch(int filter)
+        {
+            List <SearchResultItemControl> searchItems = new List<SearchResultItemControl>();
+            
+            // Determine which table(s) to search through according to the selected filter
+            switch (filter)
+            {
+                case 0:
+                    searchItems = Database.DatabaseManager.LoadSongSearchItems(searchItems);
+                    searchItems = Database.DatabaseManager.LoadArtistSearchItems(searchItems);
+                    searchItems = Database.DatabaseManager.LoadAlbumSearchItems(searchItems);
+                    searchItems = Database.DatabaseManager.LoadUserSearchItems(searchItems);
+                    break;
+                case 1:
+                    searchItems = Database.DatabaseManager.LoadSongSearchItems(searchItems);
+                    break;
+                case 2:
+                    searchItems = Database.DatabaseManager.LoadArtistSearchItems(searchItems);
+                    break;
+                case 3:
+                    searchItems = Database.DatabaseManager.LoadAlbumSearchItems(searchItems);
+                    break;
+                case 4:
+                    string genre = genreInput.Text;
+                    searchItems = Database.DatabaseManager.LoadSongSearchItems(searchItems, genre);
+                    searchItems = Database.DatabaseManager.LoadAlbumSearchItems(searchItems, genre);
+                    break;
+                case 5:
+                    searchItems = Database.DatabaseManager.LoadUserSearchItems(searchItems);
+                    break;
+            }
+
+            return searchItems;
+        }
+
+        public List<SearchResultItemControl> SortSearchResults(List<SearchResultItemControl> searchResults, int sorter)
+        {
+            List<SearchResultItemControl> sortedResults = new List<SearchResultItemControl>();
+            // Determine the sorting algorithm to use and call it
+            switch (sorter)
+            {
+                case 0:
+                    // sortedResults = SortByRelevance(searchResults);
+                    sortedResults = searchResults; // PROVISIONAL
+                    break;
+                case 1:
+                    // sortedResults = SortByPopularity(searchResults);
+                    sortedResults = searchResults; // PROVISIONAL
+                    break;
+                case 2:
+                    if(filterComboBox.SelectedIndex == 0 || filterComboBox.SelectedIndex == 2 || filterComboBox.SelectedIndex == 5)
+                    {
+                        MessageBox.Show("Cannot sort artists or users by date. Please select either another sorter or filter", "Warning", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+                        sortedResults = searchResults;
+                    }
+                    else
+                    {
+                        sortedResults = Sorters.NumericalQuickSort(searchResults);
+                    }
+                    break;
+                case 3:
+                    sortedResults = Sorters.AlphabeticalQuickSort(searchResults);
+                    break;
+            }
+            return sortedResults;
         }
 
         public void DisplaySearchResults(List<SearchResultItemControl> searchResults)
@@ -73,5 +160,28 @@ namespace MusicApp.Search
                 }
             }
         }
+
+
+        // CODE NOT IN USE BELOW
+
+        // Outdated search algorithm - Exact match search
+        /*
+        private List<SearchResultItemControl> ExactKeywordSearch(string keywords, List<SearchResultItemControl> searchItems)
+        {
+            List<SearchResultItemControl> matches = new List<SearchResultItemControl>();
+
+            foreach(SearchResultItemControl item in searchItems)
+            {
+                string itemTitle = item.title.Text;
+                if(itemTitle.ToLower() == keywords.ToLower())
+                {
+                    matches.Add(item);
+                } 
+            }
+
+            return matches;
+        }
+        */
+
     }
 }

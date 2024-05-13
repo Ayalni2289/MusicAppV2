@@ -26,14 +26,11 @@ namespace MusicApp
 
         public void LoginButtonClick(object sender, RoutedEventArgs e)
         {
-            // Get user credentials input
             string username = UsernameBox.Text;
             string password = PasswordBox.Password;
 
-            // Validate credentials
             if (Authentication.AuthenticationModule.AuthenticateUser(username, password))
             {
-                // Go to main window if login successful
                 MainWindow window = new MainWindow();
                 window.Show();
                 Close();
@@ -46,12 +43,10 @@ namespace MusicApp
 
         public void SignInButtonClick(object sender, RoutedEventArgs e)
         {
-            // Get user credentials input
             string username = UsernameBox.Text;
             string password = PasswordBox.Password;
 
-            // Register user
-            if (Authentication.AuthenticationModule.RegisterUser(username, password))
+            if(Authentication.AuthenticationModule.RegisterUser(username, password))
             {
                 MessageBox.Show("Sign In successful!", "Sign In", MessageBoxButton.OK, MessageBoxImage.Information);
             }

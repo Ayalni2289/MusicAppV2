@@ -1,4 +1,6 @@
-﻿using System;
+﻿
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,11 +11,13 @@ namespace MusicApp.Authentication
 {
     public static class AuthenticationModule
     {
+
         public static bool RegisterUser(string username, string password)
         {
             string salt = GenerateSalt();
             string hashedPassword = HashPassword(password, salt);
             return Database.DatabaseManager.RegisterUser(username, hashedPassword, salt);
+           
         }
 
         public static bool AuthenticateUser(string username, string password)

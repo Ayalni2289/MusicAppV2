@@ -7,7 +7,8 @@ namespace MusicApp.Search
     /// Lógica de interacción para SearchResultItemControl.xaml
     /// </summary>
     public partial class SearchResultItemControl : UserControl
-    {
+    { 
+
         public SearchResultItemControl()
         {
             InitializeComponent();

@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Yusuf\Desktop\Last\MusicAppV2\MusicApp\obj\Debug\net8.0-windows\
+C:\Users\Yusuf\Desktop\MusicApp-main\MusicApp-main\MusicApp\obj\Debug\net8.0-windows\
 MusicApp
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-C:\Users\Yusuf\Desktop\Last\MusicAppV2\MusicApp\App.xaml
-11-1499912774
+C:\Users\Yusuf\Desktop\MusicApp-main\MusicApp-main\MusicApp\App.xaml
+61859053540
 
-44-1219377623
+21336541808
 2021507204587
-Chat\MVVM\View\ChatWindow.xaml;LoginWindow.xaml;MainWindow.xaml;Payment\Cancel_Subscription.xaml;Payment\ContactSupport.xaml;Payment\ManageSubscription.xaml;Payment\PaymentPlatform.xaml;Payment\Payment_Management.xaml;Profile\ProfileWindow.xaml;Search\SearchResultItemControl.xaml;Search\SearchWindow.xaml;
+Chat\MVVM\View\ChatWindow.xaml;LoginWindow.xaml;MainWindow.xaml;Profile\ProfileWindow.xaml;Search\SearchResultItemControl.xaml;Search\SearchWindow.xaml;
 
-True
+False
 

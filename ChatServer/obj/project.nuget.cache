@@ -1,10 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XB4ElomWOabCUz6Li3KpnMruvRG4qdarNDI4JfRCHx6oXHTkRZPKLSRpkF13KDGlU/y+O0X7qooFDx7PUebHUw==",
+  "dgSpecHash": "RUT1lc3y6IENvvvm4BlVpKrF2bH0uXh42RlqgBhBsmrBHPVEC5QNzJULIhEhyb3I3O5WkKfFvu20SkNomXU9TA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Yusuf\\Desktop\\Last\\MusicAppV2\\ChatServer\\ChatServer.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\Yusuf\\.nuget\\packages\\stylecop.analyzers\\1.1.118\\stylecop.analyzers.1.1.118.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\Yusuf\\Desktop\\MusicApp-main\\MusicApp-main\\ChatServer\\ChatServer.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

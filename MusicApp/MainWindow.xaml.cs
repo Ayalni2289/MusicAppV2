@@ -42,11 +42,6 @@ namespace MusicApp
             Close();
         }
 
-        private void GoToPayment(object sender, RoutedEventArgs e)
-        {
-            Payment.PaymentPlatform paymentPlatform = new Payment.PaymentPlatform();
-            paymentPlatform.Show();
-            Close();
-        }
+       
     }
 }

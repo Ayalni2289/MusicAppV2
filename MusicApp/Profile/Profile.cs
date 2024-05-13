@@ -5,13 +5,15 @@ namespace MusicApp.Profile
 {
     public class Profile
     {
+        private int id;
         private string biography;
         private List<string> savedSongs;
         private List<string> playlists;
 
-        public Profile()
+        public Profile(int id)
         {
-            this.biography = string.Empty;
+            this.id = id;
+            this.biography = "";
             this.savedSongs = new List<string>();
             this.playlists = new List<string>();
         }

@@ -7,24 +7,24 @@ using System.Threading.Tasks;
 
 namespace ChatServer.Net.IO
 {
-    internal class PacketReader : BinaryReader
+    class PacketReader : BinaryReader
     {
-        private NetworkStream networkStream;
-        public PacketReader(NetworkStream networkStream) : base(networkStream)
+        private NetworkStream _ns;
+        public PacketReader(NetworkStream ns) : base(ns)
         {
-            this.networkStream = networkStream;
+            _ns = ns;
         }
 
-        public string ReadMessage()
+        public String ReadMessage()
         {
-            byte[] messageBuffer;
+            byte[] msgBuffer;
             var length = ReadInt32();
-            messageBuffer = new byte[length];
-            networkStream.Read(messageBuffer, 0, length);
+            msgBuffer = new byte[length];
+            _ns.Read(msgBuffer, 0, length);
 
-            var message = Encoding.ASCII.GetString(messageBuffer);
+            var msg = Encoding.ASCII.GetString(msgBuffer);
 
-            return message;
+            return msg;
         }
     }
 }

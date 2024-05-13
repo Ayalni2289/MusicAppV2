@@ -6,30 +6,34 @@ using System.Threading.Tasks;
 
 namespace ChatServer.Net.IO
 {
-    internal class PacketBuilder
+    class PacketBuilder
     {
-        private MemoryStream memoryStream;
+        MemoryStream _ms;
 
-        public PacketBuilder()
-        {
-            memoryStream = new MemoryStream();
+        public PacketBuilder() { 
+            _ms = new MemoryStream();
         }
 
         public void WriteOpCode(byte opcode)
         {
-            memoryStream.WriteByte(opcode);
+            _ms.WriteByte(opcode);
         }
 
-        public void WriteMessage(string message)
+        public void WriteMessage (string msg) 
         {
-            var messageLength = message.Length;
-            memoryStream.Write(BitConverter.GetBytes(messageLength));
-            memoryStream.Write(Encoding.ASCII.GetBytes(message));
+            var msgLength = msg.Length;
+            _ms.Write(BitConverter.GetBytes(msgLength));
+            _ms.Write(Encoding.ASCII.GetBytes(msg));
         }
 
-        public byte[] GetPacketBytes()
+        public byte[] getPacketBytes()
         {
-            return memoryStream.ToArray();
+            return _ms.ToArray();
+        }
+
+        internal byte[] GetPacketBytes()
+        {
+            throw new NotImplementedException();
         }
     }
 }
