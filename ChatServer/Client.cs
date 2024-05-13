@@ -37,24 +37,41 @@ namespace ChatServer
                 try
                 {
                     var opcode = PacketReader.ReadByte();
-                    switch (opcode)
-                    {
-                        case 2:
-                            var msg = PacketReader.ReadMessage();
-                            Console.WriteLine($"[{DateTime.Now}]: Message Received! {msg}");
-                            Program.BroadcastMessage($"[{DateTime.Now}]: [{Username}]: {msg}");
-                            break;
-                        default:
-                            break;
-                    }
+                    ProcessPacket(opcode);
                 }
                 catch (Exception)
                 {
-                    Console.WriteLine($"[{UID.ToString()}]: Has disconnected!");
-                    Program.BroadcastDisconnect(UID.ToString());
-                    ClientSocket.Close();
+                    HandleDisconnect();
+                    break; // out of the loop
                 }
             }
+        }
+
+        private void ProcessPacket(byte opcode)
+        {
+            switch (opcode)
+            {
+                case OpCode.Message:
+                    HandleMessage();
+                    break;
+                default:
+                    // unknown opcode received
+                    break;
+            }
+        }
+
+        private void HandleMessage()
+        {
+            var message = PacketReader.ReadMessage();
+            Console.WriteLine($"[{DateTime.Now}]: Message Received! {message}");
+            Program.BroadcastMessage($"[{DateTime.Now}]: [{Username}]: {message}");
+        }
+
+        private void HandleDisconnect()
+        {
+            Console.WriteLine($"[{UID}]: Has disconnected!");
+            Program.BroadcastDisconnect(UID.ToString());
+            ClientSocket.Close();
         }
     }
 }
