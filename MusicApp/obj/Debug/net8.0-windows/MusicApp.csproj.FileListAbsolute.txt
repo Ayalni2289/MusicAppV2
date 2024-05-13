@@ -84,3 +84,33 @@ C:\Users\josel\OneDrive\Escritorio\informatica\SOFTWARE ENGINEERING\MusicAppProj
 C:\Users\josel\OneDrive\Escritorio\informatica\SOFTWARE ENGINEERING\MusicAppProject\MusicApp\obj\Debug\net8.0-windows\MusicApp.pdb
 C:\Users\josel\OneDrive\Escritorio\informatica\SOFTWARE ENGINEERING\MusicAppProject\MusicApp\obj\Debug\net8.0-windows\MusicApp.genruntimeconfig.cache
 C:\Users\josel\OneDrive\Escritorio\informatica\SOFTWARE ENGINEERING\MusicAppProject\MusicApp\obj\Debug\net8.0-windows\ref\MusicApp.dll
+C:\Users\Yusuf\Desktop\Last\MusicAppV2\MusicApp\obj\Debug\net8.0-windows\MusicApp.csproj.AssemblyReference.cache
+C:\Users\Yusuf\Desktop\Last\MusicAppV2\MusicApp\obj\Debug\net8.0-windows\LoginWindow.baml
+C:\Users\Yusuf\Desktop\Last\MusicAppV2\MusicApp\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\Yusuf\Desktop\Last\MusicAppV2\MusicApp\obj\Debug\net8.0-windows\Payment\Cancel_Subscription.baml
+C:\Users\Yusuf\Desktop\Last\MusicAppV2\MusicApp\obj\Debug\net8.0-windows\Payment\ContactSupport.baml
+C:\Users\Yusuf\Desktop\Last\MusicAppV2\MusicApp\obj\Debug\net8.0-windows\Payment\ManageSubscription.baml
+C:\Users\Yusuf\Desktop\Last\MusicAppV2\MusicApp\obj\Debug\net8.0-windows\Payment\PaymentPlatform.baml
+C:\Users\Yusuf\Desktop\Last\MusicAppV2\MusicApp\obj\Debug\net8.0-windows\Payment\Payment_Management.baml
+C:\Users\Yusuf\Desktop\Last\MusicAppV2\MusicApp\obj\Debug\net8.0-windows\Profile\ProfileWindow.baml
+C:\Users\Yusuf\Desktop\Last\MusicAppV2\MusicApp\obj\Debug\net8.0-windows\Search\SearchResultItemControl.baml
+C:\Users\Yusuf\Desktop\Last\MusicAppV2\MusicApp\obj\Debug\net8.0-windows\Search\SearchWindow.baml
+C:\Users\Yusuf\Desktop\Last\MusicAppV2\MusicApp\obj\Debug\net8.0-windows\Chat\MVVM\View\ChatWindow.g.cs
+C:\Users\Yusuf\Desktop\Last\MusicAppV2\MusicApp\obj\Debug\net8.0-windows\LoginWindow.g.cs
+C:\Users\Yusuf\Desktop\Last\MusicAppV2\MusicApp\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\Yusuf\Desktop\Last\MusicAppV2\MusicApp\obj\Debug\net8.0-windows\Payment\Cancel_Subscription.g.cs
+C:\Users\Yusuf\Desktop\Last\MusicAppV2\MusicApp\obj\Debug\net8.0-windows\Payment\ContactSupport.g.cs
+C:\Users\Yusuf\Desktop\Last\MusicAppV2\MusicApp\obj\Debug\net8.0-windows\Payment\ManageSubscription.g.cs
+C:\Users\Yusuf\Desktop\Last\MusicAppV2\MusicApp\obj\Debug\net8.0-windows\Payment\PaymentPlatform.g.cs
+C:\Users\Yusuf\Desktop\Last\MusicAppV2\MusicApp\obj\Debug\net8.0-windows\Payment\Payment_Management.g.cs
+C:\Users\Yusuf\Desktop\Last\MusicAppV2\MusicApp\obj\Debug\net8.0-windows\Profile\ProfileWindow.g.cs
+C:\Users\Yusuf\Desktop\Last\MusicAppV2\MusicApp\obj\Debug\net8.0-windows\Search\SearchResultItemControl.g.cs
+C:\Users\Yusuf\Desktop\Last\MusicAppV2\MusicApp\obj\Debug\net8.0-windows\Search\SearchWindow.g.cs
+C:\Users\Yusuf\Desktop\Last\MusicAppV2\MusicApp\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\Yusuf\Desktop\Last\MusicAppV2\MusicApp\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\Yusuf\Desktop\Last\MusicAppV2\MusicApp\obj\Debug\net8.0-windows\MusicApp_MarkupCompile.cache
+C:\Users\Yusuf\Desktop\Last\MusicAppV2\MusicApp\obj\Debug\net8.0-windows\MusicApp_MarkupCompile.lref
+C:\Users\Yusuf\Desktop\Last\MusicAppV2\MusicApp\obj\Debug\net8.0-windows\MusicApp.dll
+C:\Users\Yusuf\Desktop\Last\MusicAppV2\MusicApp\obj\Debug\net8.0-windows\refint\MusicApp.dll
+C:\Users\Yusuf\Desktop\Last\MusicAppV2\MusicApp\obj\Debug\net8.0-windows\MusicApp.xml
+C:\Users\Yusuf\Desktop\Last\MusicAppV2\MusicApp\obj\Debug\net8.0-windows\MusicApp.pdb

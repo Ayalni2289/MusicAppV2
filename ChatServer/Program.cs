@@ -8,7 +8,7 @@ namespace ChatServer
     internal class Program
     {
         private static List<Client> users;
-        private static TcpListener listener;
+        private static TcpListener? listener;
 
         public static void Main(string[] args)
         {

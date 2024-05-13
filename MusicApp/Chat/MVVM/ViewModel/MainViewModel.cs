@@ -29,7 +29,6 @@ namespace MusicApp.Chat.MVVM.ViewModel
             ConnectToServerCommand = new RelayCommand(o => server.ConnectToServer(Username), o => !string.IsNullOrEmpty(Username));
             SendMessageCommand = new RelayCommand(o => server.SendMessageToServer(Message), o => !string.IsNullOrEmpty(Message));
         }
-
         private void MessageReceived()
         {
             var msg = server.PacketReader.ReadMessage();
@@ -50,7 +49,6 @@ namespace MusicApp.Chat.MVVM.ViewModel
                 Application.Current.Dispatcher.Invoke(() => Users.Add(user));
             }
         }
-
         private void RemoveUser()
         {
             var uid = server.PacketReader.ReadMessage();
