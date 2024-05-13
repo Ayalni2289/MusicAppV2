@@ -10,10 +10,10 @@ namespace MusicApp.Chat.Net.IO
 {
     class PacketReader : BinaryReader
         {
-        private NetworkStream _ns;
-        public PacketReader(NetworkStream ns) : base(ns)
+        private NetworkStream _networkStream;
+        public PacketReader(NetworkStream network) : base(network)
         {
-            _ns = ns;
+            _networkStream = network;
         }
 
         public String ReadMessage()
@@ -21,7 +21,7 @@ namespace MusicApp.Chat.Net.IO
             byte[] msgBuffer;
             var length = ReadInt32();
             msgBuffer = new byte[length];
-            _ns.Read(msgBuffer, 0, length);
+            _networkStream.Read(msgBuffer, 0, length);
 
             var msg = Encoding.ASCII.GetString(msgBuffer);
 
