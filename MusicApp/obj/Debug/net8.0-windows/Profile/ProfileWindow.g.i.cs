@@ -100,7 +100,7 @@ namespace MusicApp.Profile {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/MusicApp;V1.0.0.0;component/profile/profilewindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/MusicApp;component/profile/profilewindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Profile\ProfileWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

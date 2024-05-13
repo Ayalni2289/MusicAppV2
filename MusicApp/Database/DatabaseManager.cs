@@ -15,7 +15,7 @@ namespace MusicApp.Database
 {
     public static class DatabaseManager
     {
-        private const string connectionString = "Data Source=LAPTOP-82HME98S\\SQLEXPRESS01;Initial Catalog=Software2;Integrated Security=True";
+        private const string connectionString = "Data Source=DESKTOP-QL08PSU\\SQLEXPRESS;Initial Catalog=Music_App;Integrated Security=True";
 
 
         public static bool RegisterUser(string username, string password, string salt)
