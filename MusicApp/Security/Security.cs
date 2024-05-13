@@ -20,11 +20,11 @@ namespace MusicApp.Security
 
         public static string EncryptData(string plainText)
         {
-            using Aes aesAlg = Aes.Create();
-            aesAlg.Key = Key;
-            aesAlg.IV = IV;
+            using Aes Encryiption = Aes.Create();
+            Encryiption.Key = Key;
+            Encryiption.IV = IV;
 
-            ICryptoTransform encryptor = aesAlg.CreateEncryptor(aesAlg.Key, aesAlg.IV);
+            ICryptoTransform encryptor = Encryiption.CreateEncryptor(Encryiption.Key, Encryiption.IV);
 
             byte[] encryptedBytes;
             using (MemoryStream msEncrypt = new MemoryStream())
