@@ -9,22 +9,22 @@ namespace ChatServer.Net.IO
 {
     internal class PacketReader : BinaryReader
     {
-        private NetworkStream ns;
-        public PacketReader(NetworkStream ns) : base(ns)
+        private NetworkStream networkStream;
+        public PacketReader(NetworkStream networkStream) : base(networkStream)
         {
-            this.ns = ns;
+            this.networkStream = networkStream;
         }
 
         public string ReadMessage()
         {
-            byte[] msgBuffer;
+            byte[] messageBuffer;
             var length = ReadInt32();
-            msgBuffer = new byte[length];
-            ns.Read(msgBuffer, 0, length);
+            messageBuffer = new byte[length];
+            networkStream.Read(messageBuffer, 0, length);
 
-            var msg = Encoding.ASCII.GetString(msgBuffer);
+            var message = Encoding.ASCII.GetString(messageBuffer);
 
-            return msg;
+            return message;
         }
     }
 }
