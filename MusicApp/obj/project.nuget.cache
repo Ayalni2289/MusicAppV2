@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Aul+lTyLqeVUvxF9ds95k4yzS9cXS6TzR9MpBaYR7AQBRoP/kMrxzx/ft1fxp5C43x80bE6jQPEqR9o/5ObWow==",
+  "dgSpecHash": "GL04g9/FXHN+qRBeWmLk7hlMtlL1zYMF7pu9olgbNAecPIGqPmaajUp8xkbX8TEFAW9ugD/jHvu6ejZSLubaVQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Yusuf\\Desktop\\MusicApp-main\\MusicApp-main\\MusicApp\\MusicApp.csproj",
+  "projectFilePath": "C:\\Users\\Yusuf\\Desktop\\Last\\MusicAppV2\\MusicApp\\MusicApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Yusuf\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\Yusuf\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",

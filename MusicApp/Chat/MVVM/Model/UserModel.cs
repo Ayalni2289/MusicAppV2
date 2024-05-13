@@ -8,9 +8,7 @@ namespace MusicApp.Chat.MVVM.Model
 {
     class UserModel
     {
-        public string UserName { get; set; }
-        public string UID { get; set; }
-
-
+        public required string UserName { get; set; }
+        public required string UID { get; set; }
     }
 }

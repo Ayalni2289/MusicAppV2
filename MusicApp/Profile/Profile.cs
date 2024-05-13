@@ -13,7 +13,7 @@ namespace MusicApp.Profile
         public Profile(int id)
         {
             this.id = id;
-            this.biography = "";
+            this.biography = string.Empty;
             this.savedSongs = new List<string>();
             this.playlists = new List<string>();
         }

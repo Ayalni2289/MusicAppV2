@@ -8,27 +8,27 @@ namespace ChatServer.Net.IO
 {
     class PacketBuilder
     {
-        MemoryStream _ms;
+        MemoryStream memoryStream;
 
-        public PacketBuilder() { 
-            _ms = new MemoryStream();
+        public PacketBuilder() {
+            memoryStream = new MemoryStream();
         }
 
         public void WriteOpCode(byte opcode)
         {
-            _ms.WriteByte(opcode);
+            memoryStream.WriteByte(opcode);
         }
 
-        public void WriteMessage (string msg) 
+        public void WriteMessage (string message) 
         {
-            var msgLength = msg.Length;
-            _ms.Write(BitConverter.GetBytes(msgLength));
-            _ms.Write(Encoding.ASCII.GetBytes(msg));
+            var msgLength = message.Length;
+            memoryStream.Write(BitConverter.GetBytes(msgLength));
+            memoryStream.Write(Encoding.ASCII.GetBytes(message));
         }
 
         public byte[] getPacketBytes()
         {
-            return _ms.ToArray();
+            return memoryStream.ToArray();
         }
 
         internal byte[] GetPacketBytes()

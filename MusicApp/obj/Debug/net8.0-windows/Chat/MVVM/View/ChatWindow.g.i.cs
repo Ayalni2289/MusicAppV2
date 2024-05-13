@@ -53,7 +53,7 @@ namespace MusicApp.Chat.MVVM.View {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/MusicApp;V1.0.0.0;component/chat/mvvm/view/chatwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/MusicApp;component/chat/mvvm/view/chatwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\..\Chat\MVVM\View\ChatWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
