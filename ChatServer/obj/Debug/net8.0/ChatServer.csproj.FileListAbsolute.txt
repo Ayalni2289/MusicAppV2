@@ -86,3 +86,17 @@ C:\Users\Yusuf\Desktop\Last\MusicAppV2\ChatServer\obj\Debug\net8.0\refint\ChatSe
 C:\Users\Yusuf\Desktop\Last\MusicAppV2\ChatServer\obj\Debug\net8.0\ChatServer.pdb
 C:\Users\Yusuf\Desktop\Last\MusicAppV2\ChatServer\obj\Debug\net8.0\ChatServer.genruntimeconfig.cache
 C:\Users\Yusuf\Desktop\Last\MusicAppV2\ChatServer\obj\Debug\net8.0\ref\ChatServer.dll
+C:\Users\nicoi\OneDrive\Escritorio\MusicAppV2-main\ChatServer\bin\Debug\net8.0\ChatServer.exe
+C:\Users\nicoi\OneDrive\Escritorio\MusicAppV2-main\ChatServer\bin\Debug\net8.0\ChatServer.deps.json
+C:\Users\nicoi\OneDrive\Escritorio\MusicAppV2-main\ChatServer\bin\Debug\net8.0\ChatServer.runtimeconfig.json
+C:\Users\nicoi\OneDrive\Escritorio\MusicAppV2-main\ChatServer\bin\Debug\net8.0\ChatServer.dll
+C:\Users\nicoi\OneDrive\Escritorio\MusicAppV2-main\ChatServer\bin\Debug\net8.0\ChatServer.pdb
+C:\Users\nicoi\OneDrive\Escritorio\MusicAppV2-main\ChatServer\obj\Debug\net8.0\ChatServer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nicoi\OneDrive\Escritorio\MusicAppV2-main\ChatServer\obj\Debug\net8.0\ChatServer.AssemblyInfoInputs.cache
+C:\Users\nicoi\OneDrive\Escritorio\MusicAppV2-main\ChatServer\obj\Debug\net8.0\ChatServer.AssemblyInfo.cs
+C:\Users\nicoi\OneDrive\Escritorio\MusicAppV2-main\ChatServer\obj\Debug\net8.0\ChatServer.csproj.CoreCompileInputs.cache
+C:\Users\nicoi\OneDrive\Escritorio\MusicAppV2-main\ChatServer\obj\Debug\net8.0\ChatServer.dll
+C:\Users\nicoi\OneDrive\Escritorio\MusicAppV2-main\ChatServer\obj\Debug\net8.0\refint\ChatServer.dll
+C:\Users\nicoi\OneDrive\Escritorio\MusicAppV2-main\ChatServer\obj\Debug\net8.0\ChatServer.pdb
+C:\Users\nicoi\OneDrive\Escritorio\MusicAppV2-main\ChatServer\obj\Debug\net8.0\ChatServer.genruntimeconfig.cache
+C:\Users\nicoi\OneDrive\Escritorio\MusicAppV2-main\ChatServer\obj\Debug\net8.0\ref\ChatServer.dll

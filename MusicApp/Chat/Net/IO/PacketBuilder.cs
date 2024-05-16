@@ -7,30 +7,30 @@ using System.Threading.Tasks;
 
 namespace MusicApp.Chat.Net.IO
 {
-    class PacketBuilder
+    internal class PacketBuilder
     {
-        MemoryStream _memoryStream;
+        private MemoryStream memoryStream;
 
         public PacketBuilder()
         {
-            _memoryStream = new MemoryStream();
+            memoryStream = new MemoryStream();
         }
 
         public void WriteOpCode(byte opcode)
         {
-            _memoryStream.WriteByte(opcode);
+            memoryStream.WriteByte(opcode);
         }
 
-        public void WriteString(string message) 
+        public void WriteString(string message)
         {
             var msgLength = message.Length;
-            _memoryStream.Write(BitConverter.GetBytes(msgLength));
-            _memoryStream.Write(Encoding.ASCII.GetBytes(message));
+            memoryStream.Write(BitConverter.GetBytes(msgLength));
+            memoryStream.Write(Encoding.ASCII.GetBytes(message));
         }
 
         public byte[] GetPacketBytes()
         {
-            return _memoryStream.ToArray();
+            return memoryStream.ToArray();
         }
     }
 }

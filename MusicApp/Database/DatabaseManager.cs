@@ -1,36 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Data.SqlClient;
-using System.Collections;
+﻿using System.Data.SqlClient;
 using System.Data;
-using System.Windows.Media;
-using System.Xml.Linq;
 using System.Windows;
 
 namespace MusicApp.Database
 {
     public static class DatabaseManager
     {
-        private const string connectionString = "Data Source=DESKTOP-QL08PSU\\SQLEXPRESS;Initial Catalog=Music_App;Integrated Security=True";
-
-
+        private const string ConnectionString = "Data Source=DESKTOP-QL08PSU\\SQLEXPRESS;Initial Catalog=Music_App;Integrated Security=True";
         public static bool RegisterUser(string username, string password, string salt)
         {
             try
             {
-                using (SqlConnection connection = new SqlConnection(connectionString))
+                using (SqlConnection connection = new SqlConnection(ConnectionString))
                 {
                     connection.Open();
 
                     string query = "INSERT INTO [USER] (userName, profilePicture, subscriptionPlan, hashedPassword, salt) VALUES (@userName, @profilePicture, @subscriptionPlan, @hashedPassword, @salt);";
                     SqlCommand command = new SqlCommand(query, connection);
                     command.Parameters.AddWithValue("@userName", username);
-                    command.Parameters.AddWithValue("@profilePicture", "");
-                    command.Parameters.AddWithValue("@subscriptionPlan", "");
+                    command.Parameters.AddWithValue("@profilePicture", " ");
+                    command.Parameters.AddWithValue("@subscriptionPlan", " ");
                     command.Parameters.AddWithValue("@hashedPassword", password);
                     command.Parameters.AddWithValue("@salt", salt);
                     command.ExecuteNonQuery();
@@ -38,9 +27,9 @@ namespace MusicApp.Database
                     connection.Close();
                 }
             }
-            catch(Exception _exception)
+            catch (Exception exception)
             {
-                Console.WriteLine("Error while inserting values in the database: " + _exception.Message);
+                Console.WriteLine("Error while inserting values in the database: " + exception.Message);
                 return false;
             }
 
@@ -51,7 +40,7 @@ namespace MusicApp.Database
         {
             try
             {
-                using (SqlConnection connection = new SqlConnection(connectionString))
+                using (SqlConnection connection = new SqlConnection(ConnectionString))
                 {
                     connection.Open();
 
@@ -81,14 +70,14 @@ namespace MusicApp.Database
                 Console.WriteLine("Error while inserting values in the database: " + ex.Message);
             }
 
-            return ("", "");
+            return (" ", " ");
         }
 
         public static List<Search.SearchResultItemControl> LoadUserSearchItems(List<Search.SearchResultItemControl> searchItems)
         {
             try
             {
-                using (SqlConnection connection = new SqlConnection(connectionString))
+                using (SqlConnection connection = new SqlConnection(ConnectionString))
                 {
                     connection.Open();
 
@@ -113,12 +102,11 @@ namespace MusicApp.Database
 
                     connection.Close();
                 }
-
             }
-            catch (Exception _exception)
+            catch (Exception exception)
             {
-                Console.WriteLine("Error while retrieving items from the database: " + _exception.Message);
-            };
+                Console.WriteLine("Error while retrieving items from the database: " + exception.Message);
+            }
             return searchItems;
         }
 
@@ -126,7 +114,7 @@ namespace MusicApp.Database
         {
             try
             {
-                using (SqlConnection connection = new SqlConnection(connectionString))
+                using (SqlConnection connection = new SqlConnection(ConnectionString))
                 {
                     connection.Open();
 
@@ -152,10 +140,10 @@ namespace MusicApp.Database
                     connection.Close();
                 }
             }
-            catch (Exception _exception)
+            catch (Exception exception)
             {
-                Console.WriteLine("Error while retrieving items from the database: " + _exception.Message);
-            };
+                Console.WriteLine("Error while retrieving items from the database: " + exception.Message);
+            }
             return searchItems;
         }
 
@@ -163,13 +151,13 @@ namespace MusicApp.Database
         {
             try
             {
-                using (SqlConnection connection = new SqlConnection(connectionString))
+                using (SqlConnection connection = new SqlConnection(ConnectionString))
                 {
                     connection.Open();
 
                     // Specify query to execute
                     string query;
-                    if (genreFilter != "")
+                    if (genreFilter != " ")
                     {
                         query = "SELECT * FROM SONG WHERE album IN ( SELECT albumId FROM ALBUM WHERE genre = '" + genreFilter + "');";
                     }
@@ -200,7 +188,7 @@ namespace MusicApp.Database
                         // Since we know the result of the select is a single element (one row and one column) we can use ExecuteScalar() to get that value
                         string subtitle1 = command1.ExecuteScalar().ToString();
 
-                        string getDateQuery = "SELECT [date] FROM ALBUM WHERE albumId = (SELECT album FROM SONG WHERE songName = '" + title +"');";
+                        string getDateQuery = "SELECT [date] FROM ALBUM WHERE albumId = (SELECT album FROM SONG WHERE songName = '" + title + "');";
                         SqlCommand command2 = new SqlCommand(getDateQuery, connection);
                         string subtitle2 = command2.ExecuteScalar().ToString();
 
@@ -214,10 +202,10 @@ namespace MusicApp.Database
                     connection.Close();
                 }
             }
-            catch (Exception _exception)
+            catch (Exception exception)
             {
-                Console.WriteLine("Error while retrieving items from the database: " + _exception.Message);
-            };
+                Console.WriteLine("Error while retrieving items from the database: " + exception.Message);
+            }
             return searchItems;
         }
 
@@ -225,13 +213,13 @@ namespace MusicApp.Database
         {
             try
             {
-                using (SqlConnection connection = new SqlConnection(connectionString))
+                using (SqlConnection connection = new SqlConnection(ConnectionString))
                 {
                     connection.Open();
 
                     // Specify query to execute
                     string query;
-                    if (genreFilter != "")
+                    if (genreFilter != " ")
                     {
                         query = "SELECT * FROM ALBUM WHERE genre = '" + genreFilter + "';";
                     }
@@ -267,76 +255,11 @@ namespace MusicApp.Database
                     connection.Close();
                 }
             }
-            catch (Exception _exception)
+            catch (Exception exception)
             {
-                Console.WriteLine("Error while retrieving items from the database: " + _exception.Message);
-            };
+                Console.WriteLine("Error while retrieving items from the database: " + exception.Message);
+            }
             return searchItems;
         }
-
-        // I don't think any of this is necessary - artists, albums and songs can be added directly to the database since they 
-        // have nothing to do with the client. Users are added in another part of the program, too.
-        // Just in case I'm keeping this here for now, though.
-        /*
-        public static void AddUser(string name, string image)
-        {
-            try
-            {
-                using (SqlConnection connection = new SqlConnection(connectionString))
-                {
-                    connection.Open();
-                    string query = "INSERT INTO [USER] (userName, profilePicture) VALUES (@userName, @profilePicture);";
-                    SqlCommand command = new SqlCommand(query, connection);
-                    command.Parameters.AddWithValue("@userName", name);
-                    command.Parameters.AddWithValue("@profilePicture", image);
-                    command.ExecuteNonQuery();
-                }
-            }
-            catch(Exception ex)
-            {
-                Console.WriteLine("Error while storing item in the database: " + ex.Message);
-            };
-        }
-
-        public static void AddArtist(string name, string image)
-        {
-            try
-            {
-                SqlConnection connection = new SqlConnection(connectionString);
-                connection.Open();
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("Error while storing item in the database: " + ex.Message);
-            };
-        }
-
-        public static void AddAlbum(string name, string image, string artist, string date, string genre)
-        {
-            try
-            {
-                SqlConnection connection = new SqlConnection(connectionString);
-                connection.Open();
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("Error while storing item in the database: " + ex.Message);
-            };
-        }
-
-        public static void AddSong(string name, string album)
-        {
-            try
-            {
-                SqlConnection connection = new SqlConnection(connectionString);
-                connection.Open();
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("Error while storing item in the database: " + ex.Message);
-            };
-        }
-        */
-
     }
 }

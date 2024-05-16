@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using MusicApp;
+﻿using MusicApp;
 
 namespace MusicApp.Profile
 {

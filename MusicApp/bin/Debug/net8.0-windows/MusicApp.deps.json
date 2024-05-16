@@ -9,6 +9,7 @@
       "MusicApp/1.0.0": {
         "dependencies": {
           "Stripe.net": "44.2.0",
+          "StyleCop.Analyzers": "1.1.118",
           "System.Data.SqlClient": "4.8.6"
         },
         "runtime": {
@@ -76,6 +77,7 @@
           }
         }
       },
+      "StyleCop.Analyzers/1.1.118": {},
       "System.Configuration.ConfigurationManager/6.0.0": {
         "dependencies": {
           "System.Security.Cryptography.ProtectedData": "6.0.0",
@@ -191,6 +193,13 @@
       "sha512": "sha512-2QMltgWLdGSiuuMDCXGOq9aCBwAYnJCfEjG1RojgRul/6nqYwnqjFPOGI++Igw0ogNeJgoZh0UfMN4weJaCmIA==",
       "path": "stripe.net/44.2.0",
       "hashPath": "stripe.net.44.2.0.nupkg.sha512"
+    },
+    "StyleCop.Analyzers/1.1.118": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Onx6ovGSqXSK07n/0eM3ZusiNdB6cIlJdabQhWGgJp3Vooy9AaLS/tigeybOJAobqbtggTamoWndz72JscZBvw==",
+      "path": "stylecop.analyzers/1.1.118",
+      "hashPath": "stylecop.analyzers.1.1.118.nupkg.sha512"
     },
     "System.Configuration.ConfigurationManager/6.0.0": {
       "type": "package",

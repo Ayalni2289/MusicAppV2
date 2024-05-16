@@ -1,21 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Sockets;
+﻿using System.Net.Sockets;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace ChatServer.Net.IO
 {
-    class PacketReader : BinaryReader
+    internal class PacketReader : BinaryReader
     {
         private NetworkStream networkStream;
-        public PacketReader(NetworkStream _networkSystem) : base(_networkSystem)
+        public PacketReader(NetworkStream networkSystem) : base(networkSystem)
         {
-            networkStream = _networkSystem;
+            networkStream = networkSystem;
         }
 
-        public String ReadMessage()
+        public string ReadMessage()
         {
             byte[] msgBuffer;
             var length = ReadInt32();

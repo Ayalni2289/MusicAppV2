@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Yusuf\\Desktop\\Last\\MusicAppV2\\MusicApp\\MusicApp.csproj": {}
+    "C:\\Users\\nicoi\\OneDrive\\Escritorio\\MusicAppV2-main\\MusicApp\\MusicApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Yusuf\\Desktop\\Last\\MusicAppV2\\MusicApp\\MusicApp.csproj": {
+    "C:\\Users\\nicoi\\OneDrive\\Escritorio\\MusicAppV2-main\\MusicApp\\MusicApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Yusuf\\Desktop\\Last\\MusicAppV2\\MusicApp\\MusicApp.csproj",
+        "projectUniqueName": "C:\\Users\\nicoi\\OneDrive\\Escritorio\\MusicAppV2-main\\MusicApp\\MusicApp.csproj",
         "projectName": "MusicApp",
-        "projectPath": "C:\\Users\\Yusuf\\Desktop\\Last\\MusicAppV2\\MusicApp\\MusicApp.csproj",
-        "packagesPath": "C:\\Users\\Yusuf\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Yusuf\\Desktop\\Last\\MusicAppV2\\MusicApp\\obj\\",
+        "projectPath": "C:\\Users\\nicoi\\OneDrive\\Escritorio\\MusicAppV2-main\\MusicApp\\MusicApp.csproj",
+        "packagesPath": "C:\\Users\\nicoi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\nicoi\\OneDrive\\Escritorio\\MusicAppV2-main\\MusicApp\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Yusuf\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\nicoi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -53,6 +49,12 @@
               "target": "Package",
               "version": "[44.2.0, )"
             },
+            "StyleCop.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.1.118, )"
+            },
             "System.Data.SqlClient": {
               "target": "Package",
               "version": "[4.8.6, )"
@@ -77,7 +79,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

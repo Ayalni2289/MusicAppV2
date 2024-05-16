@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MusicApp.Chat.MVVM.Model
 {
-    class UserModel
+    internal class UserModel
     {
         public required string UserName { get; set; }
         public required string UID { get; set; }

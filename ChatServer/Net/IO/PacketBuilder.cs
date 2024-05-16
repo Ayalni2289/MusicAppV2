@@ -1,16 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Text;
 
 namespace ChatServer.Net.IO
 {
-    class PacketBuilder
+    internal class PacketBuilder
     {
-        MemoryStream memoryStream;
+        private MemoryStream memoryStream;
 
-        public PacketBuilder() {
+        public PacketBuilder()
+        {
             memoryStream = new MemoryStream();
         }
 
@@ -19,21 +16,17 @@ namespace ChatServer.Net.IO
             memoryStream.WriteByte(opcode);
         }
 
-        public void WriteMessage (string message) 
+        public void WriteMessage(string message)
         {
             var msgLength = message.Length;
-            memoryStream.Write(BitConverter.GetBytes(msgLength));
-            memoryStream.Write(Encoding.ASCII.GetBytes(message));
+            memoryStream.Write(BitConverter.GetBytes(msgLength), 0, sizeof(int));
+            memoryStream.Write(Encoding.ASCII.GetBytes(message), 0, message.Length);
         }
 
-        public byte[] getPacketBytes()
+        public byte[] GetPacketBytes()
         {
             return memoryStream.ToArray();
         }
-
-        internal byte[] GetPacketBytes()
-        {
-            throw new NotImplementedException();
-        }
     }
 }
+

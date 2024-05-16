@@ -8,20 +8,20 @@ using System.Threading.Tasks;
 
 namespace MusicApp.Chat.Net.IO
 {
-    class PacketReader : BinaryReader
+    internal class PacketReader : BinaryReader
         {
-        private NetworkStream _networkStream;
+        private NetworkStream networkStream;
         public PacketReader(NetworkStream network) : base(network)
         {
-            _networkStream = network;
+            networkStream = network;
         }
 
-        public String ReadMessage()
+        public string ReadMessage()
         {
             byte[] msgBuffer;
             var length = ReadInt32();
             msgBuffer = new byte[length];
-            _networkStream.Read(msgBuffer, 0, length);
+            networkStream.Read(msgBuffer, 0, length);
 
             var msg = Encoding.ASCII.GetString(msgBuffer);
 

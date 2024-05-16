@@ -10,21 +10,16 @@ namespace MusicApp.Security
 {
     public class Security
     {
-        //These are some parameters needed for the AES cypher algorythm.
-
-        //Key which has to be 128 bit long. Each character in a string is 8 bits. UTF-8. So
-        //we have to use a 16 length string as a key and as a IV
         private static readonly byte[] Key = Encoding.UTF8.GetBytes("HolaEstaEsClave1");
-        //Initialization vector.
         private static readonly byte[] IV = Encoding.UTF8.GetBytes("Vector_init1910*");
 
         public static string EncryptData(string plainText)
         {
-            using Aes Encryiption = Aes.Create();
-            Encryiption.Key = Key;
-            Encryiption.IV = IV;
+            using Aes encryiption = Aes.Create();
+            encryiption.Key = Key;
+            encryiption.IV = IV;
 
-            ICryptoTransform encryptor = Encryiption.CreateEncryptor(Encryiption.Key, Encryiption.IV);
+            ICryptoTransform encryptor = encryiption.CreateEncryptor(encryiption.Key, encryiption.IV);
 
             byte[] encryptedBytes;
             using (MemoryStream msEncrypt = new MemoryStream())
@@ -42,8 +37,6 @@ namespace MusicApp.Security
 
             return Convert.ToBase64String(encryptedBytes);
         }
-
-
         public static string DecryptData(string cipherText)
         {
             byte[] cipherBytes = Convert.FromBase64String(cipherText);

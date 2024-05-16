@@ -1,40 +1,37 @@
-﻿using MusicApp.Chat.Net.IO;
-using System.Net.Sockets;
-using System.Reflection.Emit;
+﻿using System.Net.Sockets;
 using System.Windows;
+using MusicApp.Chat.Net.IO;
 
 namespace MusicApp.Chat.Net
 {
-    class Server
+    internal class Server : IDisposable
     {
-        TcpClient _client;
+        private TcpClient client;
         public PacketReader PacketReader;
 
-        public event Action connectedEvent;
-        public event Action msgReceivedEvent;
-        public event Action disconnectedEvent;
+        public event Action ConnectedEvent;
+        public event Action MsgReceivedEvent;
+        public event Action DisconnectedEvent;
 
         public Server()
         {
-            _client = new TcpClient();
+            client = new TcpClient();
         }
 
-        public void ConnectToServer(String username)
+        public void ConnectToServer(string username)
         {
-
-            if (!_client.Connected)
+            if (!client.Connected)
             {
-                _client.Connect("127.0.0.1", 7891);
-                PacketReader = new PacketReader(_client.GetStream());
+                client.Connect("127.0.0.1", 7891);
+                PacketReader = new PacketReader(client.GetStream());
                 if (!string.IsNullOrEmpty(username))
                 {
                     var connectPacket = new PacketBuilder();
                     connectPacket.WriteOpCode(0);
                     connectPacket.WriteString(username);
-                    _client.Client.Send(connectPacket.GetPacketBytes());
+                    client.Client.Send(connectPacket.GetPacketBytes());
                 }
                 ReadPackets();
-
             }
         }
         public enum OpCode
@@ -54,13 +51,13 @@ namespace MusicApp.Chat.Net
                     switch (opcode)
                     {
                         case (byte)OpCode.Connect:
-                            connectedEvent?.Invoke();
+                            ConnectedEvent?.Invoke();
                             break;
                         case (byte)OpCode.Message:
-                            msgReceivedEvent?.Invoke();
+                            MsgReceivedEvent?.Invoke();
                             break;
                         case (byte)OpCode.Disconnect:
-                            disconnectedEvent?.Invoke();
+                            DisconnectedEvent?.Invoke();
                             break;
                         default:
                             break;
@@ -69,19 +66,24 @@ namespace MusicApp.Chat.Net
             });
         }
 
-        public void SendMessageToServer(String messsage)
+        public void SendMessageToServer(string messsage)
         {
             try
             {
                 var messagePacket = new PacketBuilder();
                 messagePacket.WriteOpCode(2);
                 messagePacket.WriteString(messsage);
-                _client.Client.Send(messagePacket.GetPacketBytes());
+                client.Client.Send(messagePacket.GetPacketBytes());
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show("Please log in before sending a message", "Warning", MessageBoxButton.OK, MessageBoxImage.Exclamation);
             }
+        }
+
+        public void Dispose()
+        {
+            throw new NotImplementedException();
         }
     }
 }

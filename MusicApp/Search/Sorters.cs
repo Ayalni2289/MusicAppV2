@@ -62,7 +62,7 @@ namespace MusicApp.Search
                     continue;
                 }
 
-                if (Int32.Parse(list[i].subTitle2.Text) < Int32.Parse(pivot.subTitle2.Text))
+                if (int.Parse(list[i].subTitle2.Text) < int.Parse(pivot.subTitle2.Text))
                 {
                     less.Add(list[i]);
                 }
