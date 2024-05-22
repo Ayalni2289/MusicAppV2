@@ -1,5 +1,7 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
+using MusicApp.Authentication;
+using MusicApp.Database;
 
 namespace MusicApp
 {
@@ -18,7 +20,9 @@ namespace MusicApp
             string username = UsernameBox.Text;
             string password = PasswordBox.Password;
 
-            if (Authentication.AuthenticationModule.AuthenticateUser(username, password))
+            AuthenticationModule authModule = new AuthenticationModule(DatabaseManager.GetInstance());
+
+            if (authModule.AuthenticateUser(username, password))
             {
                 MainWindow window = new MainWindow();
                 window.Show();
@@ -35,7 +39,9 @@ namespace MusicApp
             string username = UsernameBox.Text;
             string password = PasswordBox.Password;
 
-            if (Authentication.AuthenticationModule.RegisterUser(username, password))
+            AuthenticationModule authModule = new AuthenticationModule(DatabaseManager.GetInstance());
+
+            if (authModule.RegisterUser(username, password))
             {
                 MessageBox.Show("Sign In successful!", "Sign In", MessageBoxButton.OK, MessageBoxImage.Information);
             }

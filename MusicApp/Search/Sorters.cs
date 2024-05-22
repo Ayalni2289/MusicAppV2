@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace MusicApp.Search
 {
-    public static class Sorters
+    public class Sorters
     {
-        public static List<SearchResultItemControl> AlphabeticalQuickSort(List<SearchResultItemControl> list)
+        public List<SearchResultItemControl> AlphabeticalQuickSort(List<SearchResultItemControl> list)
         {
             if (list.Count <= 1)
             {
@@ -44,7 +44,7 @@ namespace MusicApp.Search
             return sortedList;
         }
 
-        public static List<SearchResultItemControl> NumericalQuickSort(List<SearchResultItemControl> list)
+        public List<SearchResultItemControl> NumericalQuickSort(List<SearchResultItemControl> list)
         {
             if (list.Count <= 1)
             {

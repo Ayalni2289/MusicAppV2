@@ -247,3 +247,179 @@ C:\Users\nicoi\OneDrive\Escritorio\MusicAppV2-main\MusicApp\obj\Debug\net8.0-win
 C:\Users\nicoi\OneDrive\Escritorio\MusicAppV2-main\MusicApp\obj\Debug\net8.0-windows\MusicApp.pdb
 C:\Users\nicoi\OneDrive\Escritorio\MusicAppV2-main\MusicApp\obj\Debug\net8.0-windows\MusicApp.genruntimeconfig.cache
 C:\Users\nicoi\OneDrive\Escritorio\MusicAppV2-main\MusicApp\obj\Debug\net8.0-windows\ref\MusicApp.dll
+C:\Users\nicoi\Downloads\MusicAppV2-main9\MusicApp\bin\Debug\net8.0-windows\MusicApp.exe
+C:\Users\nicoi\Downloads\MusicAppV2-main9\MusicApp\bin\Debug\net8.0-windows\MusicApp.deps.json
+C:\Users\nicoi\Downloads\MusicAppV2-main9\MusicApp\bin\Debug\net8.0-windows\MusicApp.runtimeconfig.json
+C:\Users\nicoi\Downloads\MusicAppV2-main9\MusicApp\bin\Debug\net8.0-windows\MusicApp.dll
+C:\Users\nicoi\Downloads\MusicAppV2-main9\MusicApp\bin\Debug\net8.0-windows\MusicApp.pdb
+C:\Users\nicoi\Downloads\MusicAppV2-main9\MusicApp\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+C:\Users\nicoi\Downloads\MusicAppV2-main9\MusicApp\bin\Debug\net8.0-windows\Stripe.net.dll
+C:\Users\nicoi\Downloads\MusicAppV2-main9\MusicApp\bin\Debug\net8.0-windows\System.Data.SqlClient.dll
+C:\Users\nicoi\Downloads\MusicAppV2-main9\MusicApp\bin\Debug\net8.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\nicoi\Downloads\MusicAppV2-main9\MusicApp\bin\Debug\net8.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\nicoi\Downloads\MusicAppV2-main9\MusicApp\bin\Debug\net8.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\nicoi\Downloads\MusicAppV2-main9\MusicApp\bin\Debug\net8.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\nicoi\Downloads\MusicAppV2-main9\MusicApp\bin\Debug\net8.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\nicoi\Downloads\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\MusicApp.csproj.AssemblyReference.cache
+C:\Users\nicoi\Downloads\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\LoginWindow.baml
+C:\Users\nicoi\Downloads\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\nicoi\Downloads\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\Profile\ProfileWindow.baml
+C:\Users\nicoi\Downloads\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\Search\SearchResultItemControl.baml
+C:\Users\nicoi\Downloads\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\Search\SearchWindow.baml
+C:\Users\nicoi\Downloads\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\Chat\MVVM\View\ChatWindow.g.cs
+C:\Users\nicoi\Downloads\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\LoginWindow.g.cs
+C:\Users\nicoi\Downloads\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\nicoi\Downloads\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\Profile\ProfileWindow.g.cs
+C:\Users\nicoi\Downloads\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\Search\SearchResultItemControl.g.cs
+C:\Users\nicoi\Downloads\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\Search\SearchWindow.g.cs
+C:\Users\nicoi\Downloads\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\nicoi\Downloads\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\nicoi\Downloads\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\MusicApp_MarkupCompile.cache
+C:\Users\nicoi\Downloads\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\MusicApp_MarkupCompile.lref
+C:\Users\nicoi\Downloads\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\Chat\MVVM\View\ChatWindow.baml
+C:\Users\nicoi\Downloads\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\MusicApp.g.resources
+C:\Users\nicoi\Downloads\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\MusicApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nicoi\Downloads\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\MusicApp.AssemblyInfoInputs.cache
+C:\Users\nicoi\Downloads\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\MusicApp.AssemblyInfo.cs
+C:\Users\nicoi\Downloads\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\MusicApp.csproj.CoreCompileInputs.cache
+C:\Users\nicoi\Downloads\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\MusicApp.csproj.Up2Date
+C:\Users\nicoi\Downloads\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\MusicApp.dll
+C:\Users\nicoi\Downloads\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\refint\MusicApp.dll
+C:\Users\nicoi\Downloads\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\MusicApp.pdb
+C:\Users\nicoi\Downloads\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\MusicApp.genruntimeconfig.cache
+C:\Users\nicoi\Downloads\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\ref\MusicApp.dll
+C:\Users\nicoi\Downloads\MusicAppV2-main9\MusicApp\bin\Debug\net8.0-windows\Castle.Core.dll
+C:\Users\nicoi\Downloads\MusicAppV2-main9\MusicApp\bin\Debug\net8.0-windows\Moq.dll
+C:\Users\nicoi\Downloads\MusicAppV2-main9\MusicApp\bin\Debug\net8.0-windows\SQLConnection.dll
+C:\Users\nicoi\Downloads\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\bin\Debug\net8.0-windows\MusicApp.exe
+C:\Users\nicoi\Downloads\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\bin\Debug\net8.0-windows\MusicApp.deps.json
+C:\Users\nicoi\Downloads\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\bin\Debug\net8.0-windows\MusicApp.runtimeconfig.json
+C:\Users\nicoi\Downloads\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\bin\Debug\net8.0-windows\MusicApp.dll
+C:\Users\nicoi\Downloads\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\bin\Debug\net8.0-windows\MusicApp.pdb
+C:\Users\nicoi\Downloads\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\bin\Debug\net8.0-windows\Castle.Core.dll
+C:\Users\nicoi\Downloads\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\bin\Debug\net8.0-windows\Moq.dll
+C:\Users\nicoi\Downloads\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+C:\Users\nicoi\Downloads\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\bin\Debug\net8.0-windows\SQLConnection.dll
+C:\Users\nicoi\Downloads\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\bin\Debug\net8.0-windows\Stripe.net.dll
+C:\Users\nicoi\Downloads\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\bin\Debug\net8.0-windows\System.Data.SqlClient.dll
+C:\Users\nicoi\Downloads\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\bin\Debug\net8.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\nicoi\Downloads\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\bin\Debug\net8.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\nicoi\Downloads\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\bin\Debug\net8.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\nicoi\Downloads\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\bin\Debug\net8.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\nicoi\Downloads\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\bin\Debug\net8.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\nicoi\Downloads\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\MusicApp.csproj.AssemblyReference.cache
+C:\Users\nicoi\Downloads\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\LoginWindow.baml
+C:\Users\nicoi\Downloads\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\nicoi\Downloads\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\Profile\ProfileWindow.baml
+C:\Users\nicoi\Downloads\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\Search\SearchResultItemControl.baml
+C:\Users\nicoi\Downloads\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\Search\SearchWindow.baml
+C:\Users\nicoi\Downloads\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\Chat\MVVM\View\ChatWindow.g.cs
+C:\Users\nicoi\Downloads\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\LoginWindow.g.cs
+C:\Users\nicoi\Downloads\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\nicoi\Downloads\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\Profile\ProfileWindow.g.cs
+C:\Users\nicoi\Downloads\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\Search\SearchResultItemControl.g.cs
+C:\Users\nicoi\Downloads\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\Search\SearchWindow.g.cs
+C:\Users\nicoi\Downloads\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\nicoi\Downloads\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\nicoi\Downloads\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\MusicApp_MarkupCompile.cache
+C:\Users\nicoi\Downloads\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\MusicApp_MarkupCompile.lref
+C:\Users\nicoi\Downloads\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\Chat\MVVM\View\ChatWindow.baml
+C:\Users\nicoi\Downloads\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\MusicApp.g.resources
+C:\Users\nicoi\Downloads\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\MusicApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nicoi\Downloads\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\MusicApp.AssemblyInfoInputs.cache
+C:\Users\nicoi\Downloads\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\MusicApp.AssemblyInfo.cs
+C:\Users\nicoi\Downloads\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\MusicApp.csproj.CoreCompileInputs.cache
+C:\Users\nicoi\Downloads\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\MusicApp.csproj.Up2Date
+C:\Users\nicoi\Downloads\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\MusicApp.dll
+C:\Users\nicoi\Downloads\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\refint\MusicApp.dll
+C:\Users\nicoi\Downloads\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\MusicApp.pdb
+C:\Users\nicoi\Downloads\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\MusicApp.genruntimeconfig.cache
+C:\Users\nicoi\Downloads\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\ref\MusicApp.dll
+C:\Users\Usuario\OneDrive - Universidad de Oviedo\ERASMUS\Software engineering\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\bin\Debug\net8.0-windows\MusicApp.exe
+C:\Users\Usuario\OneDrive - Universidad de Oviedo\ERASMUS\Software engineering\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\bin\Debug\net8.0-windows\MusicApp.deps.json
+C:\Users\Usuario\OneDrive - Universidad de Oviedo\ERASMUS\Software engineering\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\bin\Debug\net8.0-windows\MusicApp.runtimeconfig.json
+C:\Users\Usuario\OneDrive - Universidad de Oviedo\ERASMUS\Software engineering\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\bin\Debug\net8.0-windows\MusicApp.dll
+C:\Users\Usuario\OneDrive - Universidad de Oviedo\ERASMUS\Software engineering\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\bin\Debug\net8.0-windows\MusicApp.pdb
+C:\Users\Usuario\OneDrive - Universidad de Oviedo\ERASMUS\Software engineering\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\bin\Debug\net8.0-windows\Castle.Core.dll
+C:\Users\Usuario\OneDrive - Universidad de Oviedo\ERASMUS\Software engineering\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\bin\Debug\net8.0-windows\Moq.dll
+C:\Users\Usuario\OneDrive - Universidad de Oviedo\ERASMUS\Software engineering\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+C:\Users\Usuario\OneDrive - Universidad de Oviedo\ERASMUS\Software engineering\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\bin\Debug\net8.0-windows\SQLConnection.dll
+C:\Users\Usuario\OneDrive - Universidad de Oviedo\ERASMUS\Software engineering\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\bin\Debug\net8.0-windows\Stripe.net.dll
+C:\Users\Usuario\OneDrive - Universidad de Oviedo\ERASMUS\Software engineering\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\bin\Debug\net8.0-windows\System.Data.SqlClient.dll
+C:\Users\Usuario\OneDrive - Universidad de Oviedo\ERASMUS\Software engineering\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\bin\Debug\net8.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\Usuario\OneDrive - Universidad de Oviedo\ERASMUS\Software engineering\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\bin\Debug\net8.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\Usuario\OneDrive - Universidad de Oviedo\ERASMUS\Software engineering\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\bin\Debug\net8.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\Usuario\OneDrive - Universidad de Oviedo\ERASMUS\Software engineering\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\bin\Debug\net8.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Usuario\OneDrive - Universidad de Oviedo\ERASMUS\Software engineering\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\bin\Debug\net8.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Usuario\OneDrive - Universidad de Oviedo\ERASMUS\Software engineering\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\MusicApp.csproj.AssemblyReference.cache
+C:\Users\Usuario\OneDrive - Universidad de Oviedo\ERASMUS\Software engineering\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\LoginWindow.baml
+C:\Users\Usuario\OneDrive - Universidad de Oviedo\ERASMUS\Software engineering\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\Usuario\OneDrive - Universidad de Oviedo\ERASMUS\Software engineering\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\Profile\ProfileWindow.baml
+C:\Users\Usuario\OneDrive - Universidad de Oviedo\ERASMUS\Software engineering\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\Search\SearchResultItemControl.baml
+C:\Users\Usuario\OneDrive - Universidad de Oviedo\ERASMUS\Software engineering\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\Search\SearchWindow.baml
+C:\Users\Usuario\OneDrive - Universidad de Oviedo\ERASMUS\Software engineering\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\Chat\MVVM\View\ChatWindow.g.cs
+C:\Users\Usuario\OneDrive - Universidad de Oviedo\ERASMUS\Software engineering\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\LoginWindow.g.cs
+C:\Users\Usuario\OneDrive - Universidad de Oviedo\ERASMUS\Software engineering\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\Usuario\OneDrive - Universidad de Oviedo\ERASMUS\Software engineering\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\Profile\ProfileWindow.g.cs
+C:\Users\Usuario\OneDrive - Universidad de Oviedo\ERASMUS\Software engineering\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\Search\SearchResultItemControl.g.cs
+C:\Users\Usuario\OneDrive - Universidad de Oviedo\ERASMUS\Software engineering\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\Search\SearchWindow.g.cs
+C:\Users\Usuario\OneDrive - Universidad de Oviedo\ERASMUS\Software engineering\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\Usuario\OneDrive - Universidad de Oviedo\ERASMUS\Software engineering\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\Usuario\OneDrive - Universidad de Oviedo\ERASMUS\Software engineering\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\MusicApp_MarkupCompile.cache
+C:\Users\Usuario\OneDrive - Universidad de Oviedo\ERASMUS\Software engineering\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\MusicApp_MarkupCompile.lref
+C:\Users\Usuario\OneDrive - Universidad de Oviedo\ERASMUS\Software engineering\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\Chat\MVVM\View\ChatWindow.baml
+C:\Users\Usuario\OneDrive - Universidad de Oviedo\ERASMUS\Software engineering\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\MusicApp.g.resources
+C:\Users\Usuario\OneDrive - Universidad de Oviedo\ERASMUS\Software engineering\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\MusicApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\OneDrive - Universidad de Oviedo\ERASMUS\Software engineering\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\MusicApp.AssemblyInfoInputs.cache
+C:\Users\Usuario\OneDrive - Universidad de Oviedo\ERASMUS\Software engineering\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\MusicApp.AssemblyInfo.cs
+C:\Users\Usuario\OneDrive - Universidad de Oviedo\ERASMUS\Software engineering\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\MusicApp.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\OneDrive - Universidad de Oviedo\ERASMUS\Software engineering\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\MusicApp.csproj.Up2Date
+C:\Users\Usuario\OneDrive - Universidad de Oviedo\ERASMUS\Software engineering\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\MusicApp.dll
+C:\Users\Usuario\OneDrive - Universidad de Oviedo\ERASMUS\Software engineering\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\refint\MusicApp.dll
+C:\Users\Usuario\OneDrive - Universidad de Oviedo\ERASMUS\Software engineering\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\MusicApp.pdb
+C:\Users\Usuario\OneDrive - Universidad de Oviedo\ERASMUS\Software engineering\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\MusicApp.genruntimeconfig.cache
+C:\Users\Usuario\OneDrive - Universidad de Oviedo\ERASMUS\Software engineering\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\ref\MusicApp.dll
+C:\Users\Jaime\Desktop\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\bin\Debug\net8.0-windows\MusicApp.exe
+C:\Users\Jaime\Desktop\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\bin\Debug\net8.0-windows\MusicApp.deps.json
+C:\Users\Jaime\Desktop\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\bin\Debug\net8.0-windows\MusicApp.runtimeconfig.json
+C:\Users\Jaime\Desktop\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\bin\Debug\net8.0-windows\MusicApp.dll
+C:\Users\Jaime\Desktop\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\bin\Debug\net8.0-windows\MusicApp.pdb
+C:\Users\Jaime\Desktop\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\bin\Debug\net8.0-windows\Castle.Core.dll
+C:\Users\Jaime\Desktop\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\bin\Debug\net8.0-windows\Moq.dll
+C:\Users\Jaime\Desktop\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+C:\Users\Jaime\Desktop\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\bin\Debug\net8.0-windows\SQLConnection.dll
+C:\Users\Jaime\Desktop\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\bin\Debug\net8.0-windows\Stripe.net.dll
+C:\Users\Jaime\Desktop\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\bin\Debug\net8.0-windows\System.Data.SqlClient.dll
+C:\Users\Jaime\Desktop\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\bin\Debug\net8.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\Jaime\Desktop\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\bin\Debug\net8.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\Jaime\Desktop\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\bin\Debug\net8.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\Jaime\Desktop\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\bin\Debug\net8.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Jaime\Desktop\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\bin\Debug\net8.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Jaime\Desktop\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\MusicApp.csproj.AssemblyReference.cache
+C:\Users\Jaime\Desktop\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\LoginWindow.baml
+C:\Users\Jaime\Desktop\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\Jaime\Desktop\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\Profile\ProfileWindow.baml
+C:\Users\Jaime\Desktop\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\Search\SearchResultItemControl.baml
+C:\Users\Jaime\Desktop\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\Search\SearchWindow.baml
+C:\Users\Jaime\Desktop\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\Chat\MVVM\View\ChatWindow.g.cs
+C:\Users\Jaime\Desktop\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\LoginWindow.g.cs
+C:\Users\Jaime\Desktop\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\Jaime\Desktop\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\Profile\ProfileWindow.g.cs
+C:\Users\Jaime\Desktop\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\Search\SearchResultItemControl.g.cs
+C:\Users\Jaime\Desktop\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\Search\SearchWindow.g.cs
+C:\Users\Jaime\Desktop\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\Jaime\Desktop\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\Jaime\Desktop\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\MusicApp_MarkupCompile.cache
+C:\Users\Jaime\Desktop\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\MusicApp_MarkupCompile.lref
+C:\Users\Jaime\Desktop\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\Chat\MVVM\View\ChatWindow.baml
+C:\Users\Jaime\Desktop\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\MusicApp.g.resources
+C:\Users\Jaime\Desktop\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\MusicApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jaime\Desktop\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\MusicApp.AssemblyInfoInputs.cache
+C:\Users\Jaime\Desktop\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\MusicApp.AssemblyInfo.cs
+C:\Users\Jaime\Desktop\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\MusicApp.csproj.CoreCompileInputs.cache
+C:\Users\Jaime\Desktop\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\MusicApp.csproj.Up2Date
+C:\Users\Jaime\Desktop\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\MusicApp.dll
+C:\Users\Jaime\Desktop\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\refint\MusicApp.dll
+C:\Users\Jaime\Desktop\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\MusicApp.pdb
+C:\Users\Jaime\Desktop\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\MusicApp.genruntimeconfig.cache
+C:\Users\Jaime\Desktop\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\ref\MusicApp.dll

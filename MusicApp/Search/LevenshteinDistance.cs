@@ -1,14 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MusicApp.Search
 {
-    public static class LevenshteinDistance
+    public class LevenshteinDistance
     {
-        public static int Compute(string s, string t)
+        public int Compute(string s, string t)
         {
             // Dynamic programming table (from 0 to Length)
             int[,] distance = new int[s.Length + 1, t.Length + 1];
@@ -45,7 +41,7 @@ namespace MusicApp.Search
         }
 
         // Given two strings verify if they are a fuzzy match
-        public static bool IsFuzzyMatch(string s, string t, int threshold)
+        public bool IsFuzzyMatch(string s, string t, int threshold)
         {
             return Compute(s, t) <= threshold;
         }

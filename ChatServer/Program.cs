@@ -30,7 +30,7 @@ namespace ChatServer
                 foreach (var usr in users)
                 {
                     var broadcastPacket = new PacketBuilder();
-                    broadcastPacket.WriteOpCode(1);
+                    broadcastPacket.WriteOperationCode(1);
                     broadcastPacket.WriteMessage(usr.Username);
                     broadcastPacket.WriteMessage(usr.UID.ToString());
                     user.ClientSocket.Client.Send(broadcastPacket.GetPacketBytes());
@@ -43,7 +43,7 @@ namespace ChatServer
             foreach (var user in users)
             {
                 var msgPacket = new PacketBuilder();
-                msgPacket.WriteOpCode(2);
+                msgPacket.WriteOperationCode(2);
                 msgPacket.WriteMessage(message);
                 user.ClientSocket.Client.Send(msgPacket.GetPacketBytes());
             }
@@ -55,7 +55,7 @@ namespace ChatServer
             foreach (var user in users)
             {
                 var broadcastPacket = new PacketBuilder();
-                broadcastPacket.WriteOpCode(3);
+                broadcastPacket.WriteOperationCode(3);
                 broadcastPacket.WriteMessage(uid);
                 user.ClientSocket.Client.Send(broadcastPacket.GetPacketBytes());
             }

@@ -1,6 +1,4 @@
-﻿using MusicApp;
-
-namespace MusicApp.Profile
+﻿namespace MusicApp.Profile
 {
     public class Profile
     {
@@ -17,42 +15,42 @@ namespace MusicApp.Profile
             this.playlists = new List<string>();
         }
 
-        public string GetBiography()
+        public virtual string GetBiography()
         {
             return biography;
         }
 
-        public void SetBiography(string bio)
+        public virtual void SetBiography(string bio)
         {
             biography = bio;
         }
 
-        public List<string> GetSavedSongs()
+        public virtual List<string> GetSavedSongs()
         {
             return savedSongs;
         }
 
-        public void AddSavedSong(string song)
+        public virtual void AddSavedSong(string song)
         {
             savedSongs.Add(song);
         }
 
-        public void RemoveSavedSong(string song)
+        public virtual void RemoveSavedSong(string song)
         {
             savedSongs.Remove(song);
         }
 
-        public List<string> GetPlaylists()
+        public virtual List<string> GetPlaylists()
         {
             return playlists;
         }
 
-        public void AddPlaylist(string playlist)
+        public virtual void AddPlaylist(string playlist)
         {
             playlists.Add(playlist);
         }
 
-        public void RemovePlaylist(string playlist)
+        public virtual void RemovePlaylist(string playlist)
         {
             playlists.Remove(playlist);
         }

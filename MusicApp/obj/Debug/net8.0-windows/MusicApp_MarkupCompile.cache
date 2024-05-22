@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\nicoi\OneDrive\Escritorio\MusicAppV2-main\MusicApp\obj\Debug\net8.0-windows\
-MusicApp
+C:\Users\Jaime\Desktop\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Debug\net8.0-windows\
+MusicApp_m1ke24rr_wpftmp
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-C:\Users\nicoi\OneDrive\Escritorio\MusicAppV2-main\MusicApp\App.xaml
+C:\Users\Jaime\Desktop\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\App.xaml
 61859053540
 
-21336541808
-202705012032
+321303167175
+4081183671964
 Chat\MVVM\View\ChatWindow.xaml;LoginWindow.xaml;MainWindow.xaml;Profile\ProfileWindow.xaml;Search\SearchResultItemControl.xaml;Search\SearchWindow.xaml;
 
-False
+True
 

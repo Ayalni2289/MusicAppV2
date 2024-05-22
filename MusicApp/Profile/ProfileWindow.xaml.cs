@@ -4,15 +4,19 @@ using System.Windows.Controls;
 using System.Windows.Media.Imaging;
 using Microsoft.Win32;
 using MusicApp;
+
 namespace MusicApp.Profile
 {
     public partial class ProfileWindow : Window
     {
         private Profile userProfile;
+        private IOpenFileDialogService openFileDialogService; // Define el campo aquí
+
         public ProfileWindow()
         {
             InitializeComponent();
-            
+            this.openFileDialogService = new OpenFileDialogService(); // Inicializa el campo aquí
+
             // Create a new profile with an ID of 1
             userProfile = new Profile(1);
             // Set the biography textbox text
@@ -23,14 +27,14 @@ namespace MusicApp.Profile
             lstPlaylists.ItemsSource = userProfile.GetPlaylists();
         }
 
-        private void SaveBiography_Click(object sender, RoutedEventArgs e)
+        public void SaveBiography_Click(object sender, RoutedEventArgs e)
         {
             // Save the biography entered in the textbox
             userProfile.SetBiography(txtBiography.Text);
             MessageBox.Show("Biography saved!");
         }
 
-        private void AddSavedSong_Click(object sender, RoutedEventArgs e)
+        public void AddSavedSong_Click(object sender, RoutedEventArgs e)
         {
             // Add the new saved song entered in the textbox
             userProfile.AddSavedSong(txtNewSavedSong.Text);
@@ -40,7 +44,7 @@ namespace MusicApp.Profile
             txtNewSavedSong.Clear();
         }
 
-        private void RemoveSavedSong_Click(object sender, RoutedEventArgs e)
+        public void RemoveSavedSong_Click(object sender, RoutedEventArgs e)
         {
             // Remove the selected saved song from the listbox
             string selectedSong = lstSavedSongs.SelectedItem as string;
@@ -51,7 +55,7 @@ namespace MusicApp.Profile
             }
         }
 
-        private void AddPlaylist_Click(object sender, RoutedEventArgs e)
+        public void AddPlaylist_Click(object sender, RoutedEventArgs e)
         {
             // Add the new playlist in the textbox
             userProfile.AddPlaylist(txtNewPlaylist.Text);
@@ -61,7 +65,7 @@ namespace MusicApp.Profile
             txtNewPlaylist.Clear();
         }
 
-        private void RemovePlaylist_Click(object sender, RoutedEventArgs e)
+        public void RemovePlaylist_Click(object sender, RoutedEventArgs e)
         {
             // Remove playlist from the listbox
             string selectedPlaylist = lstPlaylists.SelectedItem as string;
@@ -72,20 +76,17 @@ namespace MusicApp.Profile
             }
         }
 
-        private void ChangeProfilePicture_Click(object sender, RoutedEventArgs e)
+        public void ChangeProfilePicture_Click(object sender, RoutedEventArgs e)
         {
-            //changing profile picture
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.Filter = "Image Files (*.jpg; *.jpeg; *.png; *.bmp; *.gif)|*.jpg; *.jpeg; *.png; *.bmp; *.gif";
-            if (openFileDialog.ShowDialog() == true)
+            // changing profile picture
+            if (openFileDialogService.ShowDialog())
             {
                 BitmapImage bitmap = new BitmapImage();
                 bitmap.BeginInit();
-                bitmap.UriSource = new Uri(openFileDialog.FileName);
+                bitmap.UriSource = new Uri(openFileDialogService.FileName);
                 bitmap.EndInit();
                 imgProfilePicture.Source = bitmap;
             }
         }
-
     }
 }

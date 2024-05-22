@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\nicoi\OneDrive\Escritorio\MusicAppV2-main\MusicApp\obj\Release\net8.0-windows\
+C:\Users\Jaime\Desktop\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\obj\Release\net8.0-windows\
 MusicApp
 none
 false
 TRACE;RELEASE;NET;NET8_0;NETCOREAPP
-C:\Users\nicoi\OneDrive\Escritorio\MusicAppV2-main\MusicApp\App.xaml
+C:\Users\Jaime\Desktop\MusicAppV2-mainPROYECTOFUNCIONA\MusicAppV2-main9\MusicApp\App.xaml
 61859053540
 
-211316204070
-202705012032
+24698185019
+204-1555647666
 Chat\MVVM\View\ChatWindow.xaml;LoginWindow.xaml;MainWindow.xaml;Profile\ProfileWindow.xaml;Search\SearchResultItemControl.xaml;Search\SearchWindow.xaml;
 
 True

@@ -27,14 +27,14 @@ namespace MusicApp.Chat.Net
                 if (!string.IsNullOrEmpty(username))
                 {
                     var connectPacket = new PacketBuilder();
-                    connectPacket.WriteOpCode(0);
+                    connectPacket.WriteOperationCode(0);
                     connectPacket.WriteString(username);
                     client.Client.Send(connectPacket.GetPacketBytes());
                 }
                 ReadPackets();
             }
         }
-        public enum OpCode
+        public enum OperationCode
         {
             Connect = 1,
             Message = 2,
@@ -47,16 +47,16 @@ namespace MusicApp.Chat.Net
             {
                 while (true)
                 {
-                    var opcode = PacketReader.ReadByte();
-                    switch (opcode)
+                    var operationcode = PacketReader.ReadByte();
+                    switch (operationcode)
                     {
-                        case (byte)OpCode.Connect:
+                        case (byte)OperationCode.Connect:
                             ConnectedEvent?.Invoke();
                             break;
-                        case (byte)OpCode.Message:
+                        case (byte)OperationCode.Message:
                             MsgReceivedEvent?.Invoke();
                             break;
-                        case (byte)OpCode.Disconnect:
+                        case (byte)OperationCode.Disconnect:
                             DisconnectedEvent?.Invoke();
                             break;
                         default:
@@ -71,7 +71,7 @@ namespace MusicApp.Chat.Net
             try
             {
                 var messagePacket = new PacketBuilder();
-                messagePacket.WriteOpCode(2);
+                messagePacket.WriteOperationCode(2);
                 messagePacket.WriteString(messsage);
                 client.Client.Send(messagePacket.GetPacketBytes());
             }

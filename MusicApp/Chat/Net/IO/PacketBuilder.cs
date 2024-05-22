@@ -16,9 +16,9 @@ namespace MusicApp.Chat.Net.IO
             memoryStream = new MemoryStream();
         }
 
-        public void WriteOpCode(byte opcode)
+        public void WriteOperationCode(byte operationcode)
         {
-            memoryStream.WriteByte(opcode);
+            memoryStream.WriteByte(operationcode);
         }
 
         public void WriteString(string message)

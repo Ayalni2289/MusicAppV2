@@ -1,13 +1,40 @@
-﻿using System.Data.SqlClient;
+﻿using System;
+using System.Collections.Generic;
 using System.Data;
+using System.Data.SqlClient;
 using System.Windows;
+using Moq;
+using MusicApp.Search;
 
 namespace MusicApp.Database
 {
-    public static class DatabaseManager
+    public class DatabaseManager : IDatabaseManager
     {
-        private const string ConnectionString = "Data Source=DESKTOP-QL08PSU\\SQLEXPRESS;Initial Catalog=Music_App;Integrated Security=True";
-        public static bool RegisterUser(string username, string password, string salt)
+        private const string ConnectionString = "Data Source=LAPTOP-I0STBNP1\\SQLEXPRESS01;Initial Catalog=Software2;Integrated Security=True";
+        private static DatabaseManager instance;
+
+        // Private constructor to prevent instantiation from outside
+        private DatabaseManager()
+        {
+        }
+
+        // Public static method to get the instance of DatabaseManager class
+        public static IDatabaseManager GetInstance()
+        {
+            if (instance == null)
+            {
+                instance = new DatabaseManager();
+            }
+            return instance;
+        }
+
+        // Method to allow setting the instance for testing purposes
+        public static void SetInstance(DatabaseManager mockInstance)
+        {
+            instance = mockInstance;
+        }
+
+        public bool RegisterUser(string username, string password, string salt)
         {
             try
             {
@@ -36,7 +63,7 @@ namespace MusicApp.Database
             return true;
         }
 
-        public static (string, string) GetCredentials(string username)
+        public (string, string) GetCredentials(string username)
         {
             try
             {
@@ -44,9 +71,10 @@ namespace MusicApp.Database
                 {
                     connection.Open();
 
-                    string query = "SELECT hashedPassword, salt FROM [USER] WHERE userName = '" + username + "';";
-
+                    string query = "SELECT hashedPassword, salt FROM [USER] WHERE userName = @userName;";
                     SqlCommand command = new SqlCommand(query, connection);
+                    command.Parameters.AddWithValue("@userName", username);
+
                     using (SqlDataReader reader = command.ExecuteReader())
                     {
                         if (reader.Read())
@@ -73,7 +101,7 @@ namespace MusicApp.Database
             return (" ", " ");
         }
 
-        public static List<Search.SearchResultItemControl> LoadUserSearchItems(List<Search.SearchResultItemControl> searchItems)
+        public List<Search.SearchResultItemControl> LoadUserSearchItems(List<Search.SearchResultItemControl> searchItems)
         {
             try
             {
@@ -97,7 +125,8 @@ namespace MusicApp.Database
                         string image = row["profilePicture"].ToString();
                         string title = row["userName"].ToString();
                         string subtitle1 = "User";
-                        searchItems.Add(Search.SearchWindow.AddSearchResult(image, title, subtitle1));
+                        SearchWindow searchWindow = new SearchWindow();
+                        searchItems.Add(searchWindow.AddSearchResult(image, title, subtitle1));
                     }
 
                     connection.Close();
@@ -110,7 +139,7 @@ namespace MusicApp.Database
             return searchItems;
         }
 
-        public static List<Search.SearchResultItemControl> LoadArtistSearchItems(List<Search.SearchResultItemControl> searchItems)
+        public List<Search.SearchResultItemControl> LoadArtistSearchItems(List<Search.SearchResultItemControl> searchItems)
         {
             try
             {
@@ -134,7 +163,8 @@ namespace MusicApp.Database
                         string image = row["artistPicture"].ToString();
                         string title = row["artistName"].ToString();
                         string subtitle1 = "Artist";
-                        searchItems.Add(Search.SearchWindow.AddSearchResult(image, title, subtitle1));
+                        SearchWindow searchWindow = new SearchWindow();
+                        searchItems.Add(searchWindow.AddSearchResult(image, title, subtitle1));
                     }
 
                     connection.Close();
@@ -147,7 +177,7 @@ namespace MusicApp.Database
             return searchItems;
         }
 
-        public static List<Search.SearchResultItemControl> LoadSongSearchItems(List<Search.SearchResultItemControl> searchItems, string genreFilter = "")
+        public List<Search.SearchResultItemControl> LoadSongSearchItems(List<Search.SearchResultItemControl> searchItems, string genreFilter = "")
         {
             try
             {
@@ -159,7 +189,7 @@ namespace MusicApp.Database
                     string query;
                     if (genreFilter != " ")
                     {
-                        query = "SELECT * FROM SONG WHERE album IN ( SELECT albumId FROM ALBUM WHERE genre = '" + genreFilter + "');";
+                        query = "SELECT * FROM SONG WHERE album IN ( SELECT albumId FROM ALBUM WHERE genre = @genre);";
                     }
                     else
                     {
@@ -168,6 +198,10 @@ namespace MusicApp.Database
 
                     // Create a SqlDataAdapter to execute the query and retrieve data
                     SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
+                    if (genreFilter != " ")
+                    {
+                        adapter.SelectCommand.Parameters.AddWithValue("@genre", genreFilter);
+                    }
 
                     // Fill a DataTable with the results of the query
                     DataTable dataTable = new DataTable();
@@ -179,24 +213,29 @@ namespace MusicApp.Database
                         string title = row["songName"].ToString();
 
                         // Resolve the database references (foreign keys) to properly pass the data to AddSearchResult()
-                        string getImageQuery = "SELECT albumPicture FROM ALBUM WHERE albumId = (SELECT album FROM SONG WHERE songName = '" + title + "');";
+                        string getImageQuery = "SELECT albumPicture FROM ALBUM WHERE albumId = (SELECT album FROM SONG WHERE songName = @title);";
                         SqlCommand command = new SqlCommand(getImageQuery, connection);
+                        command.Parameters.AddWithValue("@title", title);
                         string image = command.ExecuteScalar().ToString();
 
-                        string getArtistQuery = "SELECT artistName FROM ARTIST WHERE artistId = ( SELECT albumArtist FROM ALBUM WHERE albumId = ( SELECT album FROM SONG WHERE songName = '" + title + "'));";
+                        string getArtistQuery = "SELECT artistName FROM ARTIST WHERE artistId = ( SELECT albumArtist FROM ALBUM WHERE albumId = ( SELECT album FROM SONG WHERE songName = @title));";
                         SqlCommand command1 = new SqlCommand(getArtistQuery, connection);
+                        command1.Parameters.AddWithValue("@title", title);
                         // Since we know the result of the select is a single element (one row and one column) we can use ExecuteScalar() to get that value
                         string subtitle1 = command1.ExecuteScalar().ToString();
 
-                        string getDateQuery = "SELECT [date] FROM ALBUM WHERE albumId = (SELECT album FROM SONG WHERE songName = '" + title + "');";
+                        string getDateQuery = "SELECT [date] FROM ALBUM WHERE albumId = (SELECT album FROM SONG WHERE songName = @title);";
                         SqlCommand command2 = new SqlCommand(getDateQuery, connection);
+                        command2.Parameters.AddWithValue("@title", title);
                         string subtitle2 = command2.ExecuteScalar().ToString();
 
-                        string getGenreQuery = "SELECT genre FROM ALBUM WHERE albumId = (SELECT album FROM SONG WHERE songName = '" + title + "');";
+                        string getGenreQuery = "SELECT genre FROM ALBUM WHERE albumId = (SELECT album FROM SONG WHERE songName = @title);";
                         SqlCommand command3 = new SqlCommand(getGenreQuery, connection);
+                        command3.Parameters.AddWithValue("@title", title);
                         string subtitle3 = command3.ExecuteScalar().ToString();
 
-                        searchItems.Add(Search.SearchWindow.AddSearchResult(image, title, subtitle1, subtitle2, subtitle3));
+                        SearchWindow searchWindow = new SearchWindow();
+                        searchItems.Add(searchWindow.AddSearchResult(image, title, subtitle1, subtitle2, subtitle3));
                     }
 
                     connection.Close();
@@ -209,7 +248,7 @@ namespace MusicApp.Database
             return searchItems;
         }
 
-        public static List<Search.SearchResultItemControl> LoadAlbumSearchItems(List<Search.SearchResultItemControl> searchItems, string genreFilter = "")
+        public List<Search.SearchResultItemControl> LoadAlbumSearchItems(List<Search.SearchResultItemControl> searchItems, string genreFilter = "")
         {
             try
             {
@@ -221,7 +260,7 @@ namespace MusicApp.Database
                     string query;
                     if (genreFilter != " ")
                     {
-                        query = "SELECT * FROM ALBUM WHERE genre = '" + genreFilter + "';";
+                        query = "SELECT * FROM ALBUM WHERE genre = @genre;";
                     }
                     else
                     {
@@ -230,6 +269,10 @@ namespace MusicApp.Database
 
                     // Create a SqlDataAdapter to execute the query and retrieve data
                     SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
+                    if (genreFilter != " ")
+                    {
+                        adapter.SelectCommand.Parameters.AddWithValue("@genre", genreFilter);
+                    }
 
                     // Fill a DataTable with the results of the query
                     DataTable dataTable = new DataTable();
@@ -244,14 +287,15 @@ namespace MusicApp.Database
                         string subtitle3 = row["genre"].ToString();
 
                         // Resolve the database references (foreign keys) to properly pass the data to AddSearchResult()
-                        string getArtistQuery = "SELECT artistName FROM ARTIST WHERE artistId = ( SELECT albumArtist FROM ALBUM WHERE albumName = '" + title + "');";
+                        string getArtistQuery = "SELECT artistName FROM ARTIST WHERE artistId = ( SELECT albumArtist FROM ALBUM WHERE albumName = @title);";
                         SqlCommand command = new SqlCommand(getArtistQuery, connection);
-                        // Since we know the result of the select is a single element (one row and one column) we can use ExecuteScalar() to get that value
+                        command.Parameters.AddWithValue("@title", title);
                         string subtitle1 = command.ExecuteScalar().ToString();
 
-                        searchItems.Add(Search.SearchWindow.AddSearchResult(image, title, subtitle1, subtitle2, subtitle3));
+                        // Create a new instance of SearchWindow
+                        SearchWindow searchWindow = new SearchWindow();
+                        searchItems.Add(searchWindow.AddSearchResult(image, title, subtitle1, subtitle2, subtitle3));
                     }
-
                     connection.Close();
                 }
             }

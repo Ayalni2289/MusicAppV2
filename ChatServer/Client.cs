@@ -15,9 +15,9 @@ namespace ChatServer
             ClientSocket = client;
             UID = Guid.NewGuid();
             packetReader = new PacketReader(ClientSocket.GetStream());
-            var opcode = packetReader.ReadByte();
+            var operationcode = packetReader.ReadByte();
             // This operation code correspond to the receiving of the packet in the server
-            if (opcode == 0)
+            if (operationcode == 0)
             {
                 Username = packetReader.ReadMessage();
                 Console.WriteLine($"[{DateTime.Now}]: Client has connected with the username: {Username}");
@@ -35,8 +35,8 @@ namespace ChatServer
             {
                 try
                 {
-                    var opcode = packetReader.ReadByte();
-                    switch (opcode)
+                    var operationcode = packetReader.ReadByte();
+                    switch (operationcode)
                     {
                         case 2:
                             var msg = packetReader.ReadMessage();

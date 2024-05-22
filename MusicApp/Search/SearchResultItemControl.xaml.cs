@@ -1,4 +1,5 @@
-﻿using System.Windows.Controls;
+﻿using System;
+using System.Windows.Controls;
 using System.Windows.Media.Imaging;
 
 namespace MusicApp.Search
@@ -7,12 +8,18 @@ namespace MusicApp.Search
     /// Lógica de interacción para SearchResultItemControl.xaml
     /// </summary>
     public partial class SearchResultItemControl : UserControl
-    { 
-
+    {
         public SearchResultItemControl()
         {
             InitializeComponent();
         }
+
+        // Propiedades públicas para acceder a los elementos desde fuera de la clase
+        public Image ImageElement => image;
+        public TextBlock TitleElement => title;
+        public TextBlock SubTitle1Element => subTitle1;
+        public TextBlock SubTitle2Element => subTitle2;
+        public TextBlock SubTitle3Element => subTitle3;
 
         public void SetImage(string imagePath)
         {
